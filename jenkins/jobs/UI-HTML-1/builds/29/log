@@ -1,9 +1,0 @@
-Started by user [8mha:AAAAlh+LCAAAAAAAAP9b85aBtbiIQTGjNKU4P08vOT+vOD8nVc83PyU1x6OyILUoJzMv2y+/JJUBAhiZGBgqihhk0NSjKDWzXb3RdlLBUSYGJk8GtpzUvPSSDB8G5tKinBIGIZ+sxLJE/ZzEvHT94JKizLx0a6BxUmjGOUNodHsLgAzOEgYu/dLi1CL9vNKcHACFIKlWvwAAAA==[0manonymous
-[EnvInject] - Loading node environment variables.
-Building in workspace /root/.jenkins/jobs/UI-HTML-1/workspace
-[workspace] $ /bin/sh -xe /tmp/hudson6401670705140310357.sh
-+ git clone https://github.com/aliceh/se34euca
-fatal: destination path 'se34euca' already exists and is not an empty directory.
-Build step 'Execute shell' marked build as failure
-Archiving artifacts
-Finished: FAILURE
