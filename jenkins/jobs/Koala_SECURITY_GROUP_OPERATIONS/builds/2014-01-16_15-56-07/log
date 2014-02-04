@@ -1,0 +1,62 @@
+Started by user [8mha:AAAAlh+LCAAAAAAAAP9b85aBtbiIQTGjNKU4P08vOT+vOD8nVc83PyU1x6OyILUoJzMv2y+/JJUBAhiZGBgqihhk0NSjKDWzXb3RdlLBUSYGJk8GtpzUvPSSDB8G5tKinBIGIZ+sxLJE/ZzEvHT94JKizLx0a6BxUmjGOUNodHsLgAzOEgYu/dLi1CL9vNKcHACFIKlWvwAAAA==[0manonymous
+[EnvInject] - Loading node environment variables.
+Building in workspace /root/.jenkins/jobs/Koala_1/workspace
+[workspace] $ /bin/sh -xe /tmp/hudson929469685062709720.sh
++ java -jar /root/selenium-server-standalone-2.39.0.jar -userExtensions /root/user-extensions.js -htmlSuite *firefox http://10.111.101.112:8888 /root/se34euca/selenium_ide/KOALA/KEYPAIR_OPERATIONS.html Koala_results1.html -trustAllSSLCertificates
+Jan 16, 2014 3:56:07 PM org.openqa.grid.selenium.GridLauncher main
+INFO: Launching a standalone server
+15:56:08.856 INFO - Java: Sun Microsystems Inc. 20.0-b12
+15:56:08.857 INFO - OS: Linux 3.2.0-37-generic-pae i386
+15:56:08.881 INFO - v2.39.0, with Core v2.39.0. Built from revision ff23eac
+15:56:08.946 INFO - Default driver org.openqa.selenium.iphone.IPhoneDriver registration is skipped: registration capabilities Capabilities [{platform=MAC, browserName=iPhone, version=}] does not match with current platform: LINUX
+15:56:08.946 INFO - Default driver org.openqa.selenium.iphone.IPhoneDriver registration is skipped: registration capabilities Capabilities [{platform=MAC, browserName=iPad, version=}] does not match with current platform: LINUX
+15:56:08.965 INFO - Default driver org.openqa.selenium.ie.InternetExplorerDriver registration is skipped: registration capabilities Capabilities [{platform=WINDOWS, ensureCleanSession=true, browserName=internet explorer, version=}] does not match with current platform: LINUX
+15:56:09.008 INFO - RemoteWebDriver instances should connect to: http://127.0.0.1:4444/wd/hub
+15:56:09.009 INFO - Version Jetty/5.1.x
+15:56:09.009 INFO - Started HttpContext[/selenium-server/driver,/selenium-server/driver]
+15:56:09.010 INFO - Started HttpContext[/selenium-server,/selenium-server]
+15:56:09.010 INFO - Started HttpContext[/,/]
+15:56:09.506 INFO - Started org.openqa.jetty.jetty.servlet.ServletHandler@93d6bc
+15:56:09.507 INFO - Started HttpContext[/wd,/wd]
+15:56:09.511 INFO - Started SocketListener on 0.0.0.0:4444
+15:56:09.511 INFO - Started org.openqa.jetty.jetty.Server@10655dd
+15:56:09.549 WARN - Caution: '/usr/bin/firefox': file is a script file, not a real executable.  The browser environment is no longer fully under RC control
+jar:file:/root/selenium-server-standalone-2.39.0.jar!/customProfileDirCUSTFFCHROME
+15:56:09.626 INFO - Preparing Firefox profile...
+15:56:10.880 INFO - Launching Firefox...
+15:56:12.031 INFO - Checking Resource aliases
+jar:file:/root/selenium-server-standalone-2.39.0.jar!/sslSupport
+15:56:14.716 INFO - Checking Resource aliases
+15:56:14.937 INFO - Started SocketListener on 0.0.0.0:51059
+15:56:18.034 INFO - Received posted results
+verify-keypairs-number-0.html
+<a href="verify-keypairs-number-0.html">verify-keypairs-number-0</a></td></tr>
+</tbody></table>
+
+
+
+delete-created-keypairs.html
+<a href="delete-created-keypairs.html">delete-created-keypairs</a></td></tr>
+<tr class="  status_failed"><td>
+verify-keypairs-number-2.html
+<a href="verify-keypairs-number-2.html">verify-keypairs-number-2</a></td></tr>
+<tr class="  status_failed"><td>
+create-key-pair-from-landing-page.html
+<a href="create-key-pair-from-landing-page.html">create-key-pair-from-landing-page</a></td></tr>
+<tr class="  status_failed"><td>
+verify-keypairs-number-1.html
+<a href="verify-keypairs-number-1.html">verify-keypairs-number-1</a></td></tr>
+<tr class="  status_failed"><td>
+create-key-pair-from-dashboard.html
+<a href="create-key-pair-from-dashboard.html">create-key-pair-from-dashboard</a></td></tr>
+<tr class="  status_failed"><td>
+koala_login.html
+<a href="koala_login.html">koala_login</a></td></tr>
+<tr class="  status_failed"><td>
+15:56:18.383 INFO - Killing Firefox...
+Tests failed, see result file for details: /root/.jenkins/jobs/Koala_1/workspace/Koala_results1.html
+15:56:18.444 INFO - Shutting down...
+15:56:18.444 INFO - Stopping Acceptor ServerSocket[addr=0.0.0.0/0.0.0.0,port=0,localport=4444]
+Build step 'Execute shell' marked build as failure
+Archiving artifacts
+Finished: FAILURE

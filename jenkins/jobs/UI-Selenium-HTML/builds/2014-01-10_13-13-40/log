@@ -1,0 +1,20 @@
+Started by user [8mha:AAAAlh+LCAAAAAAAAP9b85aBtbiIQTGjNKU4P08vOT+vOD8nVc83PyU1x6OyILUoJzMv2y+/JJUBAhiZGBgqihhk0NSjKDWzXb3RdlLBUSYGJk8GtpzUvPSSDB8G5tKinBIGIZ+sxLJE/ZzEvHT94JKizLx0a6BxUmjGOUNodHsLgAzOEgYu/dLi1CL9vNKcHACFIKlWvwAAAA==[0manonymous
+[EnvInject] - Loading node environment variables.
+Building in workspace /root/.jenkins/jobs/UI-Selenium-HTML/workspace
+FATAL: Null value not allowed as an environment variable: GIT_URL_2
+[8mha:AAAAWB+LCAAAAAAAAP9b85aBtbiIQSmjNKU4P08vOT+vOD8nVc8DzHWtSE4tKMnMz/PLL0ldFVf2c+b/lb5MDAwVRQxSaBqcITRIIQMEMIIUFgAAckCEiWAAAAA=[0mjava.lang.IllegalArgumentException: Null value not allowed as an environment variable: GIT_URL_2
+	at hudson.EnvVars.put(EnvVars.java:172)
+	at hudson.EnvVars.put(EnvVars.java:64)
+	at hudson.plugins.git.GitSCM.buildEnvVars(GitSCM.java:989)
+	at hudson.model.AbstractBuild.getEnvironment(AbstractBuild.java:915)
+	at hudson.plugins.git.GitSCM.checkout(GitSCM.java:865)
+	at hudson.model.AbstractProject.checkout(AbstractProject.java:1411)
+	at hudson.model.AbstractBuild$AbstractBuildExecution.defaultCheckout(AbstractBuild.java:652)
+	at jenkins.scm.SCMCheckoutStrategy.checkout(SCMCheckoutStrategy.java:88)
+	at hudson.model.AbstractBuild$AbstractBuildExecution.run(AbstractBuild.java:557)
+	at com.tikal.jenkins.plugins.multijob.MultiJobBuild$MultiJobRunnerImpl.run(MultiJobBuild.java:70)
+	at hudson.model.Run.execute(Run.java:1665)
+	at hudson.model.Run.run(Run.java:1612)
+	at com.tikal.jenkins.plugins.multijob.MultiJobBuild.run(MultiJobBuild.java:63)
+	at hudson.model.ResourceController.execute(ResourceController.java:88)
+	at hudson.model.Executor.run(Executor.java:246)

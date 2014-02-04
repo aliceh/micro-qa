@@ -1,0 +1,63 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<build>
+  <actions>
+    <hudson.model.ParametersAction>
+      <parameters>
+        <hudson.model.StringParameterValue>
+          <name>console_ip</name>
+          <description>IP address of eucalyptus console</description>
+          <value>10.111.101.112</value>
+        </hudson.model.StringParameterValue>
+        <hudson.model.StringParameterValue>
+          <name>console_protocol</name>
+          <description>Protocol that eucalyptus console uses: can be http or https</description>
+          <value>http</value>
+        </hudson.model.StringParameterValue>
+        <hudson.model.StringParameterValue>
+          <name>browser_type</name>
+          <description>Browser type for the test: can be firefox or iexplorer</description>
+          <value>firefox</value>
+        </hudson.model.StringParameterValue>
+        <hudson.model.StringParameterValue>
+          <name>repo_url</name>
+          <description>Github repo URL of test suite</description>
+          <value>https://github.com/aliceh/se34euca</value>
+        </hudson.model.StringParameterValue>
+        <hudson.model.StringParameterValue>
+          <name>dir</name>
+          <description>Directory of the cloned test suite</description>
+          <value>/root/se34euca/selenium_ide/Jenkins_3.4.2/UI-manual-tests_1.html</value>
+        </hudson.model.StringParameterValue>
+        <hudson.model.StringParameterValue>
+          <name>branch</name>
+          <description></description>
+          <value>master</value>
+        </hudson.model.StringParameterValue>
+        <hudson.model.StringParameterValue>
+          <name>test_suite_name</name>
+          <description></description>
+          <value>SECURITY_GROUP_OPERATIONS.html</value>
+        </hudson.model.StringParameterValue>
+      </parameters>
+    </hudson.model.ParametersAction>
+    <hudson.model.CauseAction>
+      <causes>
+        <hudson.model.Cause_-UserIdCause/>
+      </causes>
+    </hudson.model.CauseAction>
+    <org.jenkinsci.plugins.envinject.EnvInjectPluginAction plugin="envinject@1.89">
+      <build class="build" reference="../../.."/>
+    </org.jenkinsci.plugins.envinject.EnvInjectPluginAction>
+  </actions>
+  <number>21</number>
+  <startTime>1390330317180</startTime>
+  <result>FAILURE</result>
+  <duration>15334</duration>
+  <charset>UTF-8</charset>
+  <keepLog>false</keepLog>
+  <builtOn></builtOn>
+  <workspace>/root/.jenkins/jobs/Koala_1/workspace</workspace>
+  <hudsonVersion>1.532.1</hudsonVersion>
+  <scm class="hudson.scm.NullChangeLogParser"/>
+  <culprits class="com.google.common.collect.EmptyImmutableSortedSet"/>
+</build>

@@ -1,0 +1,87 @@
+Started by upstream project "[8mha:AAAAoR+LCAAAAAAAAP9b85aBtbiIQTGjNKU4P08vOT+vOD8nVc83PyU1x6OyILUoJzMv2y+/JJUBAhiZGBgqihhk0NSjKDWzXb3RdlLBUSYGJk8GtpzUvPSSDB8G5tKinBIGIZ+sxLJE/ZzEvHT94JKizLx0a6BxUmjGOUNodHsLgAyBEgYx/az8JP1QT93gVKDhmaW5uh4hvj76AKTLn/PLAAAA[0mUI-Selenium-HTML" build number [8mha:AAAAox+LCAAAAAAAAP9b85aBtbiIQTGjNKU4P08vOT+vOD8nVc83PyU1x6OyILUoJzMv2y+/JJUBAhiZGBgqihhk0NSjKDWzXb3RdlLBUSYGJk8GtpzUvPSSDB8G5tKinBIGIZ+sxLJE/ZzEvHT94JKizLx0a6BxUmjGOUNodHsLgAymEgYJ/az8JP1QT93gVKDhmaW5uh4hvj76hkYAfAFq1s0AAAA=[0m12
+originally caused by:
+ Started by user [8mha:AAAAlh+LCAAAAAAAAP9b85aBtbiIQTGjNKU4P08vOT+vOD8nVc83PyU1x6OyILUoJzMv2y+/JJUBAhiZGBgqihhk0NSjKDWzXb3RdlLBUSYGJk8GtpzUvPSSDB8G5tKinBIGIZ+sxLJE/ZzEvHT94JKizLx0a6BxUmjGOUNodHsLgAzOEgYu/dLi1CL9vNKcHACFIKlWvwAAAA==[0manonymous
+[EnvInject] - Loading node environment variables.
+Building in workspace /root/.jenkins/jobs/UI-HTML-2/workspace
+[workspace] $ /bin/sh -xe /tmp/hudson9154521644530831199.sh
++ java -jar /root/selenium-server-standalone-2.39.0.jar -htmlSuite *firefox https://10.111.5.8:8888 /root/se34euca/selenium_ide/Jenkins_3.4.2/UI-manual-tests_2.html /root/Results/results2.html -trustAllSSLCertificates
+Jan 10, 2014 8:24:30 PM org.openqa.grid.selenium.GridLauncher main
+INFO: Launching a standalone server
+20:24:32.034 INFO - Java: Sun Microsystems Inc. 20.0-b12
+20:24:32.034 INFO - OS: Linux 3.2.0-37-generic-pae i386
+20:24:32.051 INFO - v2.39.0, with Core v2.39.0. Built from revision ff23eac
+20:24:32.117 INFO - Default driver org.openqa.selenium.iphone.IPhoneDriver registration is skipped: registration capabilities Capabilities [{platform=MAC, browserName=iPad, version=}] does not match with current platform: LINUX
+20:24:32.138 INFO - Default driver org.openqa.selenium.iphone.IPhoneDriver registration is skipped: registration capabilities Capabilities [{platform=MAC, browserName=iPhone, version=}] does not match with current platform: LINUX
+20:24:32.144 INFO - Default driver org.openqa.selenium.ie.InternetExplorerDriver registration is skipped: registration capabilities Capabilities [{platform=WINDOWS, ensureCleanSession=true, browserName=internet explorer, version=}] does not match with current platform: LINUX
+20:24:32.177 INFO - RemoteWebDriver instances should connect to: http://127.0.0.1:4444/wd/hub
+20:24:32.178 INFO - Version Jetty/5.1.x
+20:24:32.178 INFO - Started HttpContext[/selenium-server/driver,/selenium-server/driver]
+20:24:32.179 INFO - Started HttpContext[/selenium-server,/selenium-server]
+20:24:32.179 INFO - Started HttpContext[/,/]
+20:24:32.528 INFO - Started org.openqa.jetty.jetty.servlet.ServletHandler@93d6bc
+20:24:32.529 INFO - Started HttpContext[/wd,/wd]
+20:24:32.532 INFO - Started SocketListener on 0.0.0.0:4444
+20:24:32.532 INFO - Started org.openqa.jetty.jetty.Server@10655dd
+20:24:32.571 WARN - Caution: '/usr/bin/firefox': file is a script file, not a real executable.  The browser environment is no longer fully under RC control
+jar:file:/root/selenium-server-standalone-2.39.0.jar!/customProfileDirCUSTFFCHROME
+20:24:32.656 INFO - Preparing Firefox profile...
+20:24:33.961 INFO - Launching Firefox...
+20:24:35.185 INFO - Checking Resource aliases
+jar:file:/root/selenium-server-standalone-2.39.0.jar!/sslSupport
+20:24:37.650 INFO - Checking Resource aliases
+20:24:37.895 INFO - Started SocketListener on 0.0.0.0:46116
+jar:file:/root/selenium-server-standalone-2.39.0.jar!/sslSupport
+20:24:38.472 INFO - Started SocketListener on 0.0.0.0:44702
+20:27:21.001 INFO - Received posted results
+chk-terminate-instance.html
+<a href="chk-terminate-instance.html">chk-terminate-instance.html</a></td></tr>
+</tbody></table>
+
+
+
+terminate-all-instances.html
+<a href="terminate-all-instances.html">terminate-all-instances.html</a></td></tr>
+<tr class="  status_passed"><td>
+chk-attach-volume.html
+<a href="chk-attach-volume.html">chk-attach-volume.html</a></td></tr>
+<tr class="  status_passed"><td>
+attach-volume-from-inst-page.html
+<a href="attach-volume-from-inst-page.html">attach-volume-from-inst-page.html</a></td></tr>
+<tr class="  status_passed"><td>
+chk-create-volume-v.html
+<a href="chk-create-volume-v.html">chk-create-volume-v.html</a></td></tr>
+<tr class="  status_passed"><td>
+chk-launch-more-like-this.html
+<a href="chk-launch-more-like-this.html">chk-launch-more-like-this.html</a></td></tr>
+<tr class="  status_passed"><td>
+launch-more-like-this.html
+<a href="launch-more-like-this.html">launch-more-like-this.html</a></td></tr>
+<tr class="  status_passed"><td>
+create-volume-v.html
+<a href="create-volume-v.html">create-volume-v.html</a></td></tr>
+<tr class="  status_passed"><td>
+chk-delete-volume.html
+<a href="chk-delete-volume.html">chk-delete-volume.html</a></td></tr>
+<tr class="  status_passed"><td>
+delete-volume.html
+<a href="delete-volume.html">delete-volume.html</a></td></tr>
+<tr class="  status_passed"><td>
+chk-create-volume.html
+<a href="chk-create-volume.html">chk-create-volume.html</a></td></tr>
+<tr class="  status_passed"><td>
+chk-launch-inst-from-images.html
+<a href="chk-launch-inst-from-images.html">chk-launch-inst-from-images.html</a></td></tr>
+<tr class="  status_passed"><td>
+launch-inst-from-images.html
+<a href="launch-inst-from-images.html">launch-inst-from-images.html</a></td></tr>
+<tr class="  status_passed"><td>
+create-volume.html
+<a href="create-volume.html">create-volume.html</a></td></tr>
+<tr class="  status_passed"><td>
+login_ui-test-acct-00_user01.html
+<a href="login_ui-test-acct-00_user01.html">login_ui-test-acct-00_user01</a></td></tr>
+<tr class="  status_passed"><td>
+20:27:21.545 INFO - Killing Firefox...
+20:27:21.606 INFO - Shutting down...
+20:27:21.606 INFO - Stopping Acceptor ServerSocket[addr=0.0.0.0/0.0.0.0,port=0,localport=4444]
+Finished: SUCCESS

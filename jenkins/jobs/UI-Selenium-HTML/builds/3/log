@@ -1,0 +1,28 @@
+Started by user [8mha:AAAAlh+LCAAAAAAAAP9b85aBtbiIQTGjNKU4P08vOT+vOD8nVc83PyU1x6OyILUoJzMv2y+/JJUBAhiZGBgqihhk0NSjKDWzXb3RdlLBUSYGJk8GtpzUvPSSDB8G5tKinBIGIZ+sxLJE/ZzEvHT94JKizLx0a6BxUmjGOUNodHsLgAzOEgYu/dLi1CL9vNKcHACFIKlWvwAAAA==[0manonymous
+[EnvInject] - Loading node environment variables.
+Building in workspace /root/.jenkins/jobs/UI-Selenium-HTML/workspace@2
+[workspace@2] $ /bin/sh -xe /tmp/hudson3197280135006985769.sh
++ java -jar /root/selenium-server-standalone-2.39.0.jar -htmlSuite *firefox https://10.111.5.8:8888 /root/se34euca/selenium_ide/Jenkins_3.4.2/UI-manual-tests_1.html results1.html -trustAllSSLCertificates
+Jan 10, 2014 12:51:25 PM org.openqa.grid.selenium.GridLauncher main
+INFO: Launching a standalone server
+12:51:26.400 INFO - Java: Sun Microsystems Inc. 20.0-b12
+12:51:26.400 INFO - OS: Linux 3.2.0-37-generic-pae i386
+12:51:26.430 INFO - v2.39.0, with Core v2.39.0. Built from revision ff23eac
+12:51:26.530 INFO - Default driver org.openqa.selenium.ie.InternetExplorerDriver registration is skipped: registration capabilities Capabilities [{platform=WINDOWS, ensureCleanSession=true, browserName=internet explorer, version=}] does not match with current platform: LINUX
+12:51:26.572 INFO - Default driver org.openqa.selenium.iphone.IPhoneDriver registration is skipped: registration capabilities Capabilities [{platform=MAC, browserName=iPad, version=}] does not match with current platform: LINUX
+12:51:26.573 INFO - Default driver org.openqa.selenium.iphone.IPhoneDriver registration is skipped: registration capabilities Capabilities [{platform=MAC, browserName=iPhone, version=}] does not match with current platform: LINUX
+12:51:26.607 INFO - RemoteWebDriver instances should connect to: http://127.0.0.1:4444/wd/hub
+12:51:26.608 INFO - Version Jetty/5.1.x
+12:51:26.609 INFO - Started HttpContext[/selenium-server/driver,/selenium-server/driver]
+12:51:26.609 INFO - Started HttpContext[/selenium-server,/selenium-server]
+12:51:26.610 INFO - Started HttpContext[/,/]
+12:51:44.389 INFO - Started org.openqa.jetty.jetty.servlet.ServletHandler@1f6df4c
+12:51:44.389 INFO - Started HttpContext[/wd,/wd]
+12:51:44.392 WARN - Failed to start: SocketListener0@0.0.0.0:4444
+Exception in thread "main" java.net.BindException: Selenium is already running on port 4444. Or some other service is.
+	at org.openqa.selenium.server.SeleniumServer.start(SeleniumServer.java:491)
+	at org.openqa.selenium.server.SeleniumServer.boot(SeleniumServer.java:300)
+	at org.openqa.selenium.server.SeleniumServer.main(SeleniumServer.java:245)
+	at org.openqa.grid.selenium.GridLauncher.main(GridLauncher.java:96)
+Build step 'Execute shell' marked build as failure
+Finished: FAILURE

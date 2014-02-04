@@ -1,0 +1,41 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<com.tikal.jenkins.plugins.multijob.MultiJobBuild plugin="jenkins-multijob-plugin@1.10">
+  <actions>
+    <hudson.model.CauseAction>
+      <causes>
+        <hudson.triggers.TimerTrigger_-TimerTriggerCause/>
+      </causes>
+    </hudson.model.CauseAction>
+    <org.jenkinsci.plugins.envinject.EnvInjectPluginAction plugin="envinject@1.89">
+      <build class="com.tikal.jenkins.plugins.multijob.MultiJobBuild" reference="../../.."/>
+    </org.jenkinsci.plugins.envinject.EnvInjectPluginAction>
+    <org.jenkinsci.plugins.envinject.EnvInjectBuilderContributionAction plugin="envinject@1.89"/>
+  </actions>
+  <number>20</number>
+  <startTime>1389623248951</startTime>
+  <result>FAILURE</result>
+  <duration>136048</duration>
+  <charset>UTF-8</charset>
+  <keepLog>false</keepLog>
+  <builtOn></builtOn>
+  <workspace>/root/.jenkins/jobs/UI-Selenium-HTML/workspace</workspace>
+  <hudsonVersion>1.532.1</hudsonVersion>
+  <scm class="hudson.scm.NullChangeLogParser"/>
+  <culprits class="com.google.common.collect.EmptyImmutableSortedSet"/>
+  <changeSets>
+    <build class="com.tikal.jenkins.plugins.multijob.MultiJobBuild" reference="../.."/>
+  </changeSets>
+  <subBuilds>
+    <com.tikal.jenkins.plugins.multijob.MultiJobBuild_-SubBuild>
+      <parentJobName>UI-Selenium-HTML</parentJobName>
+      <parentBuildNumber>20</parentBuildNumber>
+      <jobName>UI-HTML-1</jobName>
+      <buildNumber>12</buildNumber>
+      <phaseName>Part 1</phaseName>
+      <result>FAILURE</result>
+      <icon>red.png</icon>
+      <duration>2 min 9 sec</duration>
+      <url>job/UI-HTML-1/12/</url>
+    </com.tikal.jenkins.plugins.multijob.MultiJobBuild_-SubBuild>
+  </subBuilds>
+</com.tikal.jenkins.plugins.multijob.MultiJobBuild>

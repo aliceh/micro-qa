@@ -1,0 +1,99 @@
+Started by upstream project "[8mha:AAAAoR+LCAAAAAAAAP9b85aBtbiIQTGjNKU4P08vOT+vOD8nVc83PyU1x6OyILUoJzMv2y+/JJUBAhiZGBgqihhk0NSjKDWzXb3RdlLBUSYGJk8GtpzUvPSSDB8G5tKinBIGIZ+sxLJE/ZzEvHT94JKizLx0a6BxUmjGOUNodHsLgAyBEgYx/az8JP1QT93gVKDhmaW5uh4hvj76AKTLn/PLAAAA[0mUI-Selenium-HTML" build number [8mha:AAAAox+LCAAAAAAAAP9b85aBtbiIQTGjNKU4P08vOT+vOD8nVc83PyU1x6OyILUoJzMv2y+/JJUBAhiZGBgqihhk0NSjKDWzXb3RdlLBUSYGJk8GtpzUvPSSDB8G5tKinBIGIZ+sxLJE/ZzEvHT94JKizLx0a6BxUmjGOUNodHsLgAymEgYJ/az8JP1QT93gVKDhmaW5uh4hvj76xqYAXfY4es0AAAA=[0m35
+originally caused by:
+ Started by user [8mha:AAAAlh+LCAAAAAAAAP9b85aBtbiIQTGjNKU4P08vOT+vOD8nVc83PyU1x6OyILUoJzMv2y+/JJUBAhiZGBgqihhk0NSjKDWzXb3RdlLBUSYGJk8GtpzUvPSSDB8G5tKinBIGIZ+sxLJE/ZzEvHT94JKizLx0a6BxUmjGOUNodHsLgAzOEgYu/dLi1CL9vNKcHACFIKlWvwAAAA==[0manonymous
+[EnvInject] - Loading node environment variables.
+Building in workspace /root/.jenkins/jobs/UI-HTML-5/workspace
+[workspace] $ /bin/sh -xe /tmp/hudson6342810775367332431.sh
++ java -jar /root/selenium-server-standalone-2.39.0.jar -htmlSuite *firefox https://10.111.5.8:8888 /root/se34euca/selenium_ide/Jenkins_3.4.2/UI-manual-tests_5.html /root/Results/results5.html -trustAllSSLCertificates
+Jan 16, 2014 11:01:58 AM org.openqa.grid.selenium.GridLauncher main
+INFO: Launching a standalone server
+11:01:59.784 INFO - Java: Sun Microsystems Inc. 20.0-b12
+11:01:59.784 INFO - OS: Linux 3.2.0-37-generic-pae i386
+11:01:59.803 INFO - v2.39.0, with Core v2.39.0. Built from revision ff23eac
+11:01:59.868 INFO - Default driver org.openqa.selenium.ie.InternetExplorerDriver registration is skipped: registration capabilities Capabilities [{platform=WINDOWS, ensureCleanSession=true, browserName=internet explorer, version=}] does not match with current platform: LINUX
+11:01:59.901 INFO - Default driver org.openqa.selenium.iphone.IPhoneDriver registration is skipped: registration capabilities Capabilities [{platform=MAC, browserName=iPad, version=}] does not match with current platform: LINUX
+11:01:59.901 INFO - Default driver org.openqa.selenium.iphone.IPhoneDriver registration is skipped: registration capabilities Capabilities [{platform=MAC, browserName=iPhone, version=}] does not match with current platform: LINUX
+11:01:59.935 INFO - RemoteWebDriver instances should connect to: http://127.0.0.1:4444/wd/hub
+11:01:59.936 INFO - Version Jetty/5.1.x
+11:01:59.937 INFO - Started HttpContext[/selenium-server/driver,/selenium-server/driver]
+11:01:59.938 INFO - Started HttpContext[/selenium-server,/selenium-server]
+11:01:59.938 INFO - Started HttpContext[/,/]
+11:02:00.271 INFO - Started org.openqa.jetty.jetty.servlet.ServletHandler@e28b9
+11:02:00.272 INFO - Started HttpContext[/wd,/wd]
+11:02:00.276 INFO - Started SocketListener on 0.0.0.0:4444
+11:02:00.276 INFO - Started org.openqa.jetty.jetty.Server@f7f540
+11:02:00.316 WARN - Caution: '/usr/bin/firefox': file is a script file, not a real executable.  The browser environment is no longer fully under RC control
+jar:file:/root/selenium-server-standalone-2.39.0.jar!/customProfileDirCUSTFFCHROME
+11:02:00.400 INFO - Preparing Firefox profile...
+11:02:01.705 INFO - Launching Firefox...
+11:02:02.851 INFO - Checking Resource aliases
+jar:file:/root/selenium-server-standalone-2.39.0.jar!/sslSupport
+11:02:05.086 INFO - Checking Resource aliases
+11:02:05.330 INFO - Started SocketListener on 0.0.0.0:49492
+jar:file:/root/selenium-server-standalone-2.39.0.jar!/sslSupport
+11:02:05.713 INFO - Started SocketListener on 0.0.0.0:38097
+11:06:09.343 INFO - Received posted results
+chk-release-ip.html
+<a href="chk-release-ip.html">chk-release-ip.html</a></td></tr>
+</tbody></table>
+
+
+
+chk-delete-volume.html
+<a href="chk-delete-volume.html">chk-delete-volume.html</a></td></tr>
+<tr class="  status_passed"><td>
+release-ip-to-cloud.html
+<a href="release-ip-to-cloud.html">release-ip-to-cloud.html</a></td></tr>
+<tr class="  status_passed"><td>
+delete-volumes-all.html
+<a href="delete-volumes-all.html">delete-volumes-all.html</a></td></tr>
+<tr class="  status_passed"><td>
+chk-terminate-instance.html
+<a href="chk-terminate-instance.html">chk-terminate-instance.html</a></td></tr>
+<tr class="  status_passed"><td>
+terminate-all-instances.html
+<a href="terminate-all-instances.html">terminate-all-instances.html</a></td></tr>
+<tr class="  status_passed"><td>
+detach-volume-inst-page.html
+<a href="detach-volume-inst-page.html">detach-volume-inst-page.html</a></td></tr>
+<tr class="  status_passed"><td>
+delete-snapshots-all.html
+<a href="delete-snapshots-all.html">delete-snapshots-all.html</a></td></tr>
+<tr class="  status_passed"><td>
+register-snapshot-test-snap-as-image.html
+<a href="register-snapshot-test-snap-as-image.html">register-snapshot-test-snap-as-image.html</a></td></tr>
+<tr class="  status_passed"><td>
+create-snapshot-test-snap.html
+<a href="create-snapshot-test-snap.html">create-snapshot-test-snap.html</a></td></tr>
+<tr class="  status_passed"><td>
+delete-snapshots-all.html
+<a href="delete-snapshots-all.html">delete-snapshots-all.html</a></td></tr>
+<tr class="  status_passed"><td>
+chk-attach-volume.html
+<a href="chk-attach-volume.html">chk-attach-volume.html</a></td></tr>
+<tr class="  status_passed"><td>
+chk-delete-security-group.html
+<a href="chk-delete-security-group.html">chk-delete-security-group.html</a></td></tr>
+<tr class="  status_passed"><td>
+attach-volume-from-volumes-page.html
+<a href="attach-volume-from-volumes-page.html">attach-volume-from-volumes-page.html</a></td></tr>
+<tr class="  status_passed"><td>
+delete-security-group.html
+<a href="delete-security-group.html">delete-security-group.html</a></td></tr>
+<tr class="  status_passed"><td>
+chk-delete-key-pair.html
+<a href="chk-delete-key-pair.html">chk-delete-key-pair.html</a></td></tr>
+<tr class="  status_passed"><td>
+delete-key-pair.html
+<a href="delete-key-pair.html">delete-key-pair.html</a></td></tr>
+<tr class="  status_passed"><td>
+create-sec-group-with-rules.html
+<a href="create-sec-group-with-rules.html">create-sec-group-with-rules.html</a></td></tr>
+<tr class="  status_passed"><td>
+login_ui-test-acct-00_user01.html
+<a href="login_ui-test-acct-00_user01.html">login_ui-test-acct-00_user01</a></td></tr>
+<tr class="  status_passed"><td>
+11:06:09.817 INFO - Killing Firefox...
+11:06:09.878 INFO - Shutting down...
+11:06:09.879 INFO - Stopping Acceptor ServerSocket[addr=0.0.0.0/0.0.0.0,port=0,localport=4444]
+Finished: SUCCESS

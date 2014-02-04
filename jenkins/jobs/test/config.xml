@@ -1,0 +1,25 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<project>
+  <actions/>
+  <description></description>
+  <keepDependencies>false</keepDependencies>
+  <properties/>
+  <scm class="hudson.scm.NullSCM"/>
+  <canRoam>true</canRoam>
+  <disabled>false</disabled>
+  <blockBuildWhenDownstreamBuilding>false</blockBuildWhenDownstreamBuilding>
+  <blockBuildWhenUpstreamBuilding>false</blockBuildWhenUpstreamBuilding>
+  <triggers/>
+  <concurrentBuild>false</concurrentBuild>
+  <builders>
+    <hudson.plugins.seleniumhq.SeleniumhqBuilder plugin="seleniumhq@0.4">
+      <browser>firefox</browser>
+      <startURL>https://10.111.5.8:8888</startURL>
+      <suiteFile>/root/se34euca/selenium_ide/Jenkins_3.4.2/UI-manual-tests_1.html</suiteFile>
+      <resultFile>results.html</resultFile>
+      <other></other>
+    </hudson.plugins.seleniumhq.SeleniumhqBuilder>
+  </builders>
+  <publishers/>
+  <buildWrappers/>
+</project>

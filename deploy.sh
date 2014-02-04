@@ -1,6 +1,4 @@
-#!/bin/bash -x
-
-### Add EPEL repo
+dd EPEL repo
 if [ ! -e /etc/yum.repos.d/epel.repo ];then 
   yum install -y http://download.fedoraproject.org/pub/epel/6/i386/epel-release-6-8.noarch.rpm
 fi
@@ -68,11 +66,11 @@ popd
 easy_install selenium
 yum -y install make rubygems ruby-devel xorg-x11-font* wget xorg-x11-server-Xvfb firefox
 cd /
-wget -q https://selenium.googlecode.com/files/selenium-server-2.35.0.zip
-unzip selenium-server-2.35.0.zip
+wget -q https://selenium.googlecode.com/files/selenium-server-2.39.0.zip
+unzip selenium-server-2.39.0.zip
 dbus-uuidgen > /var/lib/dbus/machine-id
 Xvfb :0 -ac 2> /dev/null &
-export DISPLAY=":0" && nohup java -jar selenium-2.35.0/selenium-server-standalone-2.35.0.jar -trustAllSSLCertificates &
+export DISPLAY=":0" 
 
 ### Install chef dependencies
 curl -L https://www.opscode.com/chef/install.sh | bash
@@ -136,8 +134,7 @@ popd
 cat > /etc/rc.local <<EOF
 #!/bin/bash
 Xvfb :0 -ac &
-export DISPLAY=":0" && nohup java -jar /selenium-2.35.0/selenium-server-standalone-2.35.0.jar -trustAllSSLCertificates &
-exit 0
+export DISPLAY=":0" 
 EOF
 chmod +x /etc/rc.local
 

@@ -1,0 +1,78 @@
+Started by user [8mha:AAAAlh+LCAAAAAAAAP9b85aBtbiIQTGjNKU4P08vOT+vOD8nVc83PyU1x6OyILUoJzMv2y+/JJUBAhiZGBgqihhk0NSjKDWzXb3RdlLBUSYGJk8GtpzUvPSSDB8G5tKinBIGIZ+sxLJE/ZzEvHT94JKizLx0a6BxUmjGOUNodHsLgAzOEgYu/dLi1CL9vNKcHACFIKlWvwAAAA==[0manonymous
+[EnvInject] - Loading node environment variables.
+Building in workspace /root/.jenkins/jobs/UI-Selenium-HTML/workspace
+[workspace] $ /bin/sh -xe /tmp/hudson3006432143102192947.sh
++ java -jar /root/selenium-server-standalone-2.39.0.jar -htmlSuite *firefox https://10.111.5.8:8888 /root/se34euca/selenium_ide/Jenkins_3.4.2/UI-manual-tests_1.html results1.html -trustAllSSLCertificates
+Jan 10, 2014 12:51:22 PM org.openqa.grid.selenium.GridLauncher main
+INFO: Launching a standalone server
+12:51:23.635 INFO - Java: Sun Microsystems Inc. 20.0-b12
+12:51:23.635 INFO - OS: Linux 3.2.0-37-generic-pae i386
+12:51:23.650 INFO - v2.39.0, with Core v2.39.0. Built from revision ff23eac
+12:51:23.720 INFO - Default driver org.openqa.selenium.ie.InternetExplorerDriver registration is skipped: registration capabilities Capabilities [{platform=WINDOWS, ensureCleanSession=true, browserName=internet explorer, version=}] does not match with current platform: LINUX
+12:51:23.749 INFO - Default driver org.openqa.selenium.iphone.IPhoneDriver registration is skipped: registration capabilities Capabilities [{platform=MAC, browserName=iPad, version=}] does not match with current platform: LINUX
+12:51:23.749 INFO - Default driver org.openqa.selenium.iphone.IPhoneDriver registration is skipped: registration capabilities Capabilities [{platform=MAC, browserName=iPhone, version=}] does not match with current platform: LINUX
+12:51:23.780 INFO - RemoteWebDriver instances should connect to: http://127.0.0.1:4444/wd/hub
+12:51:23.781 INFO - Version Jetty/5.1.x
+12:51:23.782 INFO - Started HttpContext[/selenium-server/driver,/selenium-server/driver]
+12:51:23.782 INFO - Started HttpContext[/selenium-server,/selenium-server]
+12:51:23.783 INFO - Started HttpContext[/,/]
+12:51:24.105 INFO - Started org.openqa.jetty.jetty.servlet.ServletHandler@e28b9
+12:51:24.106 INFO - Started HttpContext[/wd,/wd]
+12:51:24.110 INFO - Started SocketListener on 0.0.0.0:4444
+12:51:24.110 INFO - Started org.openqa.jetty.jetty.Server@f7f540
+12:51:24.152 WARN - Caution: '/usr/bin/firefox': file is a script file, not a real executable.  The browser environment is no longer fully under RC control
+jar:file:/root/selenium-server-standalone-2.39.0.jar!/customProfileDirCUSTFFCHROME
+12:51:24.231 INFO - Preparing Firefox profile...
+12:51:25.536 INFO - Launching Firefox...
+12:51:27.050 INFO - Checking Resource aliases
+jar:file:/root/selenium-server-standalone-2.39.0.jar!/sslSupport
+12:51:29.396 INFO - Checking Resource aliases
+12:51:29.677 INFO - Started SocketListener on 0.0.0.0:51035
+jar:file:/root/selenium-server-standalone-2.39.0.jar!/sslSupport
+12:51:30.317 INFO - Started SocketListener on 0.0.0.0:53218
+12:53:59.839 INFO - Received posted results
+chk-create-key-pair.html
+<a href="chk-create-key-pair.html">chk-create-key-pair.html</a></td></tr>
+</tbody></table>
+
+
+
+create-key-pair.html
+<a href="create-key-pair.html">create-key-pair.html</a></td></tr>
+<tr class="  status_failed"><td>
+release-ip-to-cloud.html
+<a href="release-ip-to-cloud.html">release-ip-to-cloud.html</a></td></tr>
+<tr class="  status_passed"><td>
+chk-allocate-ip.html
+<a href="chk-allocate-ip.html">chk-allocate-ip.html</a></td></tr>
+<tr class="  status_passed"><td>
+allocate-ip.html
+<a href="allocate-ip.html">allocate-ip.html</a></td></tr>
+<tr class="  status_passed"><td>
+chk-allocate-ip-1.html
+<a href="chk-allocate-ip-1.html">chk-allocate-ip-1.html</a></td></tr>
+<tr class="  status_passed"><td>
+allocate-ip.html
+<a href="allocate-ip.html">allocate-ip.html</a></td></tr>
+<tr class="  status_passed"><td>
+chk-delete-key-pair.html
+<a href="chk-delete-key-pair.html">chk-delete-key-pair.html</a></td></tr>
+<tr class="  status_passed"><td>
+delete-imported-key-pair.html
+<a href="delete-imported-key-pair.html">delete-imported-key-pair.html</a></td></tr>
+<tr class="  status_failed"><td>
+chk-create-key-pair.html
+<a href="chk-create-key-pair.html">chk-create-key-pair.html</a></td></tr>
+<tr class="  status_passed"><td>
+import-key-pair.html
+<a href="import-key-pair.html">import-key-pair.html</a></td></tr>
+<tr class="  status_failed"><td>
+login_ui-test-acct-00_user00.html
+<a href="login_ui-test-acct-00_user00.html">login_ui-test-acct-00_user00.html</a></td></tr>
+<tr class="  status_passed"><td>
+12:54:00.108 INFO - Killing Firefox...
+Tests failed, see result file for details: /root/.jenkins/jobs/UI-Selenium-HTML/workspace/results1.html
+12:54:00.188 INFO - Shutting down...
+12:54:00.189 INFO - Stopping Acceptor ServerSocket[addr=0.0.0.0/0.0.0.0,port=0,localport=4444]
+Build step 'Execute shell' marked build as failure
+Finished: FAILURE

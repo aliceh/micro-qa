@@ -1,0 +1,37 @@
+Started by user [8mha:AAAAlh+LCAAAAAAAAP9b85aBtbiIQTGjNKU4P08vOT+vOD8nVc83PyU1x6OyILUoJzMv2y+/JJUBAhiZGBgqihhk0NSjKDWzXb3RdlLBUSYGJk8GtpzUvPSSDB8G5tKinBIGIZ+sxLJE/ZzEvHT94JKizLx0a6BxUmjGOUNodHsLgAzOEgYu/dLi1CL9vNKcHACFIKlWvwAAAA==[0manonymous
+[EnvInject] - Loading node environment variables.
+Building in workspace /root/.jenkins/jobs/UI-HTML-5/workspace
+[workspace] $ /bin/sh -xe /tmp/hudson5144799670979361307.sh
++ java -jar /root/selenium-server-standalone-2.39.0.jar -htmlSuite *firefox https://10.111.5.8:8888 /root/se34euca/selenium_ide/Jenkins_3.4.2/UI-manual-tests_5.html /root/Results/results5.html -trustAllSSLCertificates
+Jan 11, 2014 10:16:21 PM org.openqa.grid.selenium.GridLauncher main
+INFO: Launching a standalone server
+22:16:22.973 INFO - Java: Sun Microsystems Inc. 20.0-b12
+22:16:22.974 INFO - OS: Linux 3.2.0-37-generic-pae i386
+22:16:22.988 INFO - v2.39.0, with Core v2.39.0. Built from revision ff23eac
+22:16:23.044 INFO - Default driver org.openqa.selenium.ie.InternetExplorerDriver registration is skipped: registration capabilities Capabilities [{platform=WINDOWS, ensureCleanSession=true, browserName=internet explorer, version=}] does not match with current platform: LINUX
+22:16:23.073 INFO - Default driver org.openqa.selenium.iphone.IPhoneDriver registration is skipped: registration capabilities Capabilities [{platform=MAC, browserName=iPad, version=}] does not match with current platform: LINUX
+22:16:23.073 INFO - Default driver org.openqa.selenium.iphone.IPhoneDriver registration is skipped: registration capabilities Capabilities [{platform=MAC, browserName=iPhone, version=}] does not match with current platform: LINUX
+22:16:23.109 INFO - RemoteWebDriver instances should connect to: http://127.0.0.1:4444/wd/hub
+22:16:23.110 INFO - Version Jetty/5.1.x
+22:16:23.111 INFO - Started HttpContext[/selenium-server/driver,/selenium-server/driver]
+22:16:23.112 INFO - Started HttpContext[/selenium-server,/selenium-server]
+22:16:23.112 INFO - Started HttpContext[/,/]
+22:16:23.559 INFO - Started org.openqa.jetty.jetty.servlet.ServletHandler@e28b9
+22:16:23.560 INFO - Started HttpContext[/wd,/wd]
+22:16:23.564 INFO - Started SocketListener on 0.0.0.0:4444
+22:16:23.564 INFO - Started org.openqa.jetty.jetty.Server@f7f540
+22:16:23.604 WARN - Caution: '/usr/bin/firefox': file is a script file, not a real executable.  The browser environment is no longer fully under RC control
+jar:file:/root/selenium-server-standalone-2.39.0.jar!/customProfileDirCUSTFFCHROME
+22:16:23.688 INFO - Preparing Firefox profile...
+22:16:24.994 INFO - Launching Firefox...
+22:16:26.326 INFO - Checking Resource aliases
+jar:file:/root/selenium-server-standalone-2.39.0.jar!/sslSupport
+22:16:28.680 INFO - Checking Resource aliases
+22:16:28.928 INFO - Started SocketListener on 0.0.0.0:43942
+jar:file:/root/selenium-server-standalone-2.39.0.jar!/sslSupport
+22:16:29.664 INFO - Started SocketListener on 0.0.0.0:53022
+22:17:08.949 INFO - Shutting down...
+22:17:08.949 INFO - Stopping Acceptor ServerSocket[addr=0.0.0.0/0.0.0.0,port=0,localport=4444]
+Build was aborted
+Aborted by [8mha:AAAAmx+LCAAAAAAAAP9b85aBtbiIQTGjNKU4P08vOT+vOD8nVc83PyU1x6OyILUoJzMv2y+/JJUBAhiZGBgqihhk0NSjKDWzXb3RdlLBUSYGJk8GtpzUvPSSDB8G5tKinBIGIZ+sxLJE/ZzEvHT94JKizLx0a6BxUmjGOUNodHsLgAzOEgZ+/dLi1CL9xLz8vMrc/NJiAJjzDjjEAAAA[0manonymous
+Finished: ABORTED

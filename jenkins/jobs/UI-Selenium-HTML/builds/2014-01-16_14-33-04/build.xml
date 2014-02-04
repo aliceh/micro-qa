@@ -1,0 +1,89 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<com.tikal.jenkins.plugins.multijob.MultiJobBuild plugin="jenkins-multijob-plugin@1.10">
+  <actions>
+    <hudson.model.CauseAction>
+      <causes>
+        <hudson.model.Cause_-UserIdCause/>
+      </causes>
+    </hudson.model.CauseAction>
+    <org.jenkinsci.plugins.envinject.EnvInjectPluginAction plugin="envinject@1.89">
+      <build class="com.tikal.jenkins.plugins.multijob.MultiJobBuild" reference="../../.."/>
+    </org.jenkinsci.plugins.envinject.EnvInjectPluginAction>
+    <org.jenkinsci.plugins.envinject.EnvInjectBuilderContributionAction plugin="envinject@1.89"/>
+    <org.jenkinsci.plugins.envinject.EnvInjectBuilderContributionAction plugin="envinject@1.89"/>
+    <org.jenkinsci.plugins.envinject.EnvInjectBuilderContributionAction plugin="envinject@1.89"/>
+    <org.jenkinsci.plugins.envinject.EnvInjectBuilderContributionAction plugin="envinject@1.89"/>
+    <org.jenkinsci.plugins.envinject.EnvInjectBuilderContributionAction plugin="envinject@1.89"/>
+  </actions>
+  <number>37</number>
+  <startTime>1389911584275</startTime>
+  <result>FAILURE</result>
+  <duration>936265</duration>
+  <charset>UTF-8</charset>
+  <keepLog>false</keepLog>
+  <builtOn></builtOn>
+  <workspace>/root/.jenkins/jobs/UI-Selenium-HTML/workspace</workspace>
+  <hudsonVersion>1.532.1</hudsonVersion>
+  <scm class="hudson.scm.NullChangeLogParser"/>
+  <culprits class="com.google.common.collect.EmptyImmutableSortedSet"/>
+  <changeSets>
+    <build class="com.tikal.jenkins.plugins.multijob.MultiJobBuild" reference="../.."/>
+  </changeSets>
+  <subBuilds>
+    <com.tikal.jenkins.plugins.multijob.MultiJobBuild_-SubBuild>
+      <parentJobName>UI-Selenium-HTML</parentJobName>
+      <parentBuildNumber>37</parentBuildNumber>
+      <jobName>UI-HTML-1</jobName>
+      <buildNumber>25</buildNumber>
+      <phaseName>Part 1</phaseName>
+      <result>SUCCESS</result>
+      <icon>blue.png</icon>
+      <duration>1 min 9 sec</duration>
+      <url>job/UI-HTML-1/25/</url>
+    </com.tikal.jenkins.plugins.multijob.MultiJobBuild_-SubBuild>
+    <com.tikal.jenkins.plugins.multijob.MultiJobBuild_-SubBuild>
+      <parentJobName>UI-Selenium-HTML</parentJobName>
+      <parentBuildNumber>37</parentBuildNumber>
+      <jobName>UI-HTML-2</jobName>
+      <buildNumber>16</buildNumber>
+      <phaseName>Part2</phaseName>
+      <result>SUCCESS</result>
+      <icon>blue.png</icon>
+      <duration>2 min 51 sec</duration>
+      <url>job/UI-HTML-2/16/</url>
+    </com.tikal.jenkins.plugins.multijob.MultiJobBuild_-SubBuild>
+    <com.tikal.jenkins.plugins.multijob.MultiJobBuild_-SubBuild>
+      <parentJobName>UI-Selenium-HTML</parentJobName>
+      <parentBuildNumber>37</parentBuildNumber>
+      <jobName>UI-HTML-3</jobName>
+      <buildNumber>10</buildNumber>
+      <phaseName>Part 3</phaseName>
+      <result>SUCCESS</result>
+      <icon>blue.png</icon>
+      <duration>2 min 20 sec</duration>
+      <url>job/UI-HTML-3/10/</url>
+    </com.tikal.jenkins.plugins.multijob.MultiJobBuild_-SubBuild>
+    <com.tikal.jenkins.plugins.multijob.MultiJobBuild_-SubBuild>
+      <parentJobName>UI-Selenium-HTML</parentJobName>
+      <parentBuildNumber>37</parentBuildNumber>
+      <jobName>UI-HTML-4</jobName>
+      <buildNumber>10</buildNumber>
+      <phaseName>Part 4</phaseName>
+      <result>SUCCESS</result>
+      <icon>blue.png</icon>
+      <duration>3 min 2 sec</duration>
+      <url>job/UI-HTML-4/10/</url>
+    </com.tikal.jenkins.plugins.multijob.MultiJobBuild_-SubBuild>
+    <com.tikal.jenkins.plugins.multijob.MultiJobBuild_-SubBuild>
+      <parentJobName>UI-Selenium-HTML</parentJobName>
+      <parentBuildNumber>37</parentBuildNumber>
+      <jobName>UI-HTML-5</jobName>
+      <buildNumber>9</buildNumber>
+      <phaseName>Part 5</phaseName>
+      <result>FAILURE</result>
+      <icon>red.png</icon>
+      <duration>5 min 39 sec</duration>
+      <url>job/UI-HTML-5/9/</url>
+    </com.tikal.jenkins.plugins.multijob.MultiJobBuild_-SubBuild>
+  </subBuilds>
+</com.tikal.jenkins.plugins.multijob.MultiJobBuild>

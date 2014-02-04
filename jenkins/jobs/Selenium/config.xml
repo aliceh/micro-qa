@@ -1,0 +1,27 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<project>
+  <actions/>
+  <description>Trying to run selenium test as jenkins user.</description>
+  <keepDependencies>false</keepDependencies>
+  <properties/>
+  <scm class="hudson.scm.NullSCM"/>
+  <canRoam>true</canRoam>
+  <disabled>false</disabled>
+  <blockBuildWhenDownstreamBuilding>false</blockBuildWhenDownstreamBuilding>
+  <blockBuildWhenUpstreamBuilding>false</blockBuildWhenUpstreamBuilding>
+  <triggers/>
+  <concurrentBuild>false</concurrentBuild>
+  <builders>
+    <hudson.tasks.Shell>
+      <command>export DISPLAY=:0 &amp;&amp; java -jar /var/lib/jenkins/selenium-server-standalone-2.39.0.jar -userExtensions &quot;/var/lib/jenkins/user-extensions.js&quot; -htmlSuite &quot;*firefox&quot; &quot;https://10.111.5.8:8888&quot; &quot;/root/se34euca/selenium_ide/Jenkins_3.4.2/UI-manual-tests_1.html&quot; &quot;report1.html&quot; -trustAllSSLCertificates  -debug</command>
+    </hudson.tasks.Shell>
+  </builders>
+  <publishers/>
+  <buildWrappers>
+    <hudson.plugins.ws__cleanup.PreBuildCleanup plugin="ws-cleanup@0.19">
+      <deleteDirs>false</deleteDirs>
+      <cleanupParameter></cleanupParameter>
+      <externalDelete></externalDelete>
+    </hudson.plugins.ws__cleanup.PreBuildCleanup>
+  </buildWrappers>
+</project>

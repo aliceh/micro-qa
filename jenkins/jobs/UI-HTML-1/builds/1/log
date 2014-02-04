@@ -1,0 +1,78 @@
+Started by upstream project "[8mha:AAAAoR+LCAAAAAAAAP9b85aBtbiIQTGjNKU4P08vOT+vOD8nVc83PyU1x6OyILUoJzMv2y+/JJUBAhiZGBgqihhk0NSjKDWzXb3RdlLBUSYGJk8GtpzUvPSSDB8G5tKinBIGIZ+sxLJE/ZzEvHT94JKizLx0a6BxUmjGOUNodHsLgAyBEgYx/az8JP1QT93gVKDhmaW5uh4hvj76AKTLn/PLAAAA[0mUI-Selenium-HTML" build number [8mha:AAAAoR+LCAAAAAAAAP9b85aBtbiIQTGjNKU4P08vOT+vOD8nVc83PyU1x6OyILUoJzMv2y+/JJUBAhiZGBgqihhk0NSjKDWzXb3RdlLBUSYGJk8GtpzUvPSSDB8G5tKinBIGIZ+sxLJE/ZzEvHT94JKizLx0a6BxUmjGOUNodHsLQIwSBnH9rPwk/VBP3eBUoOGZpbm6HiG+PvqmAKcGJOTMAAAA[0m5
+originally caused by:
+ Started by user [8mha:AAAAlh+LCAAAAAAAAP9b85aBtbiIQTGjNKU4P08vOT+vOD8nVc83PyU1x6OyILUoJzMv2y+/JJUBAhiZGBgqihhk0NSjKDWzXb3RdlLBUSYGJk8GtpzUvPSSDB8G5tKinBIGIZ+sxLJE/ZzEvHT94JKizLx0a6BxUmjGOUNodHsLgAzOEgYu/dLi1CL9vNKcHACFIKlWvwAAAA==[0manonymous
+[EnvInject] - Loading node environment variables.
+Building in workspace /root/.jenkins/jobs/UI-HTML-1/workspace
+[workspace] $ /bin/sh -xe /tmp/hudson680805840059642900.sh
++ java -jar /root/selenium-server-standalone-2.39.0.jar -htmlSuite *firefox https://10.111.5.8:8888 /root/se34euca/selenium_ide/Jenkins_3.4.2/UI-manual-tests_1.html results1.html -trustAllSSLCertificates
+Jan 10, 2014 1:14:14 PM org.openqa.grid.selenium.GridLauncher main
+INFO: Launching a standalone server
+13:14:15.848 INFO - Java: Sun Microsystems Inc. 20.0-b12
+13:14:15.849 INFO - OS: Linux 3.2.0-37-generic-pae i386
+13:14:15.880 INFO - v2.39.0, with Core v2.39.0. Built from revision ff23eac
+13:14:15.945 INFO - Default driver org.openqa.selenium.ie.InternetExplorerDriver registration is skipped: registration capabilities Capabilities [{platform=WINDOWS, ensureCleanSession=true, browserName=internet explorer, version=}] does not match with current platform: LINUX
+13:14:15.973 INFO - Default driver org.openqa.selenium.iphone.IPhoneDriver registration is skipped: registration capabilities Capabilities [{platform=MAC, browserName=iPad, version=}] does not match with current platform: LINUX
+13:14:15.974 INFO - Default driver org.openqa.selenium.iphone.IPhoneDriver registration is skipped: registration capabilities Capabilities [{platform=MAC, browserName=iPhone, version=}] does not match with current platform: LINUX
+13:14:16.007 INFO - RemoteWebDriver instances should connect to: http://127.0.0.1:4444/wd/hub
+13:14:16.008 INFO - Version Jetty/5.1.x
+13:14:16.009 INFO - Started HttpContext[/selenium-server/driver,/selenium-server/driver]
+13:14:16.010 INFO - Started HttpContext[/selenium-server,/selenium-server]
+13:14:16.010 INFO - Started HttpContext[/,/]
+13:14:16.423 INFO - Started org.openqa.jetty.jetty.servlet.ServletHandler@e28b9
+13:14:16.423 INFO - Started HttpContext[/wd,/wd]
+13:14:16.427 INFO - Started SocketListener on 0.0.0.0:4444
+13:14:16.427 INFO - Started org.openqa.jetty.jetty.Server@f7f540
+13:14:16.468 WARN - Caution: '/usr/bin/firefox': file is a script file, not a real executable.  The browser environment is no longer fully under RC control
+jar:file:/root/selenium-server-standalone-2.39.0.jar!/customProfileDirCUSTFFCHROME
+13:14:16.545 INFO - Preparing Firefox profile...
+13:14:17.849 INFO - Launching Firefox...
+13:14:19.082 INFO - Checking Resource aliases
+jar:file:/root/selenium-server-standalone-2.39.0.jar!/sslSupport
+13:14:22.111 INFO - Checking Resource aliases
+13:14:22.351 INFO - Started SocketListener on 0.0.0.0:44562
+jar:file:/root/selenium-server-standalone-2.39.0.jar!/sslSupport
+13:14:22.916 INFO - Started SocketListener on 0.0.0.0:37988
+13:15:23.517 INFO - Received posted results
+chk-create-key-pair.html
+<a href="chk-create-key-pair.html">chk-create-key-pair.html</a></td></tr>
+</tbody></table>
+
+
+
+create-key-pair.html
+<a href="create-key-pair.html">create-key-pair.html</a></td></tr>
+<tr class="  status_passed"><td>
+release-ip-to-cloud.html
+<a href="release-ip-to-cloud.html">release-ip-to-cloud.html</a></td></tr>
+<tr class="  status_passed"><td>
+chk-allocate-ip.html
+<a href="chk-allocate-ip.html">chk-allocate-ip.html</a></td></tr>
+<tr class="  status_passed"><td>
+allocate-ip.html
+<a href="allocate-ip.html">allocate-ip.html</a></td></tr>
+<tr class="  status_passed"><td>
+chk-allocate-ip-1.html
+<a href="chk-allocate-ip-1.html">chk-allocate-ip-1.html</a></td></tr>
+<tr class="  status_passed"><td>
+allocate-ip.html
+<a href="allocate-ip.html">allocate-ip.html</a></td></tr>
+<tr class="  status_passed"><td>
+chk-delete-key-pair.html
+<a href="chk-delete-key-pair.html">chk-delete-key-pair.html</a></td></tr>
+<tr class="  status_passed"><td>
+delete-imported-key-pair.html
+<a href="delete-imported-key-pair.html">delete-imported-key-pair.html</a></td></tr>
+<tr class="  status_passed"><td>
+chk-create-key-pair.html
+<a href="chk-create-key-pair.html">chk-create-key-pair.html</a></td></tr>
+<tr class="  status_passed"><td>
+import-key-pair.html
+<a href="import-key-pair.html">import-key-pair.html</a></td></tr>
+<tr class="  status_passed"><td>
+login_ui-test-acct-00_user01.html
+<a href="login_ui-test-acct-00_user01.html">login_ui-test-acct-00_user01</a></td></tr>
+<tr class="  status_passed"><td>
+13:15:23.878 INFO - Killing Firefox...
+13:15:23.956 INFO - Shutting down...
+13:15:23.956 INFO - Stopping Acceptor ServerSocket[addr=0.0.0.0/0.0.0.0,port=0,localport=4444]
+Finished: SUCCESS

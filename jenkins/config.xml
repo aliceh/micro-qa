@@ -107,7 +107,6 @@
       <properties class="hudson.model.View$PropertyList"/>
       <jobNames>
         <comparator class="hudson.util.CaseInsensitiveComparator"/>
-        <string>Add Node</string>
         <string>Deploy Cloud in a Box</string>
         <string>Deploy Frontend and Node</string>
         <string>Rebuild Hosts Using Cobbler</string>
@@ -189,8 +188,32 @@
       <properties class="hudson.model.View$PropertyList"/>
       <jobNames>
         <comparator class="hudson.util.CaseInsensitiveComparator"/>
+        <string>UI Clean Up</string>
+        <string>UI Clean Up Sauce</string>
         <string>UI Harness</string>
+        <string>UI Harness Sauce</string>
+        <string>UI Instance Operations</string>
+        <string>UI Instance Operations Sauce</string>
+        <string>UI Instance Operatios</string>
+        <string>UI IP Address Operations</string>
+        <string>UI IP Address Operations Sauce</string>
+        <string>UI Key Pair Operations</string>
+        <string>UI Key Pair Operations Sauce</string>
+        <string>UI Security Group Operations</string>
+        <string>UI Security Group Operations Sauce</string>
+        <string>UI Snapshot Opeartions</string>
+        <string>UI Snapshot Operations Sauce</string>
         <string>UI Suite</string>
+        <string>UI Suite Sauce</string>
+        <string>UI Volume Operations</string>
+        <string>UI Volume Operations Sauce</string>
+        <string>UI Volume Operations Sequence 2</string>
+        <string>UI-HTML-1</string>
+        <string>UI-HTML-2</string>
+        <string>UI-HTML-3</string>
+        <string>UI-HTML-4</string>
+        <string>UI-HTML-5</string>
+        <string>UI-Selenium-HTML</string>
       </jobNames>
       <jobFilters/>
       <columns>
@@ -299,58 +322,6 @@ The will run once per minute and up to the number defined in the concurrent jobs
               <trim>false</trim>
               <displayLength>1</displayLength>
             </info.noirbizarre.jenkins.plugins.DescriptionColumn>
-            <hudson.views.LastSuccessColumn/>
-            <hudson.views.LastFailureColumn/>
-            <hudson.views.LastDurationColumn/>
-            <hudson.views.BuildButtonColumn/>
-          </columns>
-        </hudson.plugins.sectioned__view.ListViewSection>
-      </sections>
-    </hudson.plugins.sectioned__view.SectionedView>
-    <hudson.plugins.sectioned__view.SectionedView plugin="sectioned-view@1.18">
-      <owner class="hudson" reference="../../.."/>
-      <name>Apps</name>
-      <description>&lt;h2&gt;What is it?&lt;/h2&gt;&#xd;
-&lt;p&gt;These &quot;apps&quot; are one touch jobs that usually leverage vagrant and/or chef to launch fully configured VMs.&lt;/p&gt;&#xd;
-&lt;h3&gt;ToDo&lt;/h3&gt;&#xd;
-&lt;li&gt;Create a job to import cloud credentials&lt;/li&gt;&#xd;
-&lt;li&gt;Add some apps such as: riak or cassandra&lt;/li&gt;</description>
-      <filterExecutors>false</filterExecutors>
-      <filterQueue>false</filterQueue>
-      <properties class="hudson.model.View$PropertyList"/>
-      <sections>
-        <hudson.plugins.sectioned__view.ListViewSection>
-          <jobNames>
-            <comparator class="hudson.util.CaseInsensitiveComparator"/>
-            <string>Riak Cluster</string>
-            <string>Riak CS install and configure</string>
-          </jobNames>
-          <jobFilters/>
-          <name>Riak Solutions</name>
-          <width>FULL</width>
-          <alignment>CENTER</alignment>
-          <columns>
-            <hudson.views.StatusColumn/>
-            <hudson.views.WeatherColumn/>
-            <hudson.views.JobColumn/>
-            <hudson.views.LastSuccessColumn/>
-            <hudson.views.LastFailureColumn/>
-            <hudson.views.LastDurationColumn/>
-            <hudson.views.BuildButtonColumn/>
-          </columns>
-        </hudson.plugins.sectioned__view.ListViewSection>
-        <hudson.plugins.sectioned__view.ListViewSection>
-          <jobNames>
-            <comparator class="hudson.util.CaseInsensitiveComparator" reference="../../../hudson.plugins.sectioned__view.ListViewSection/jobNames/comparator"/>
-          </jobNames>
-          <jobFilters/>
-          <name>Cassandra Solutions</name>
-          <width>FULL</width>
-          <alignment>CENTER</alignment>
-          <columns>
-            <hudson.views.StatusColumn/>
-            <hudson.views.WeatherColumn/>
-            <hudson.views.JobColumn/>
             <hudson.views.LastSuccessColumn/>
             <hudson.views.LastFailureColumn/>
             <hudson.views.LastDurationColumn/>

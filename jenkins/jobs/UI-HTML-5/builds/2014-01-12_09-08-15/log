@@ -1,0 +1,47 @@
+Started by upstream project "[8mha:AAAAoR+LCAAAAAAAAP9b85aBtbiIQTGjNKU4P08vOT+vOD8nVc83PyU1x6OyILUoJzMv2y+/JJUBAhiZGBgqihhk0NSjKDWzXb3RdlLBUSYGJk8GtpzUvPSSDB8G5tKinBIGIZ+sxLJE/ZzEvHT94JKizLx0a6BxUmjGOUNodHsLgAyBEgYx/az8JP1QT93gVKDhmaW5uh4hvj76AKTLn/PLAAAA[0mUI-Selenium-HTML" build number [8mha:AAAAox+LCAAAAAAAAP9b85aBtbiIQTGjNKU4P08vOT+vOD8nVc83PyU1x6OyILUoJzMv2y+/JJUBAhiZGBgqihhk0NSjKDWzXb3RdlLBUSYGJk8GtpzUvPSSDB8G5tKinBIGIZ+sxLJE/ZzEvHT94JKizLx0a6BxUmjGOUNodHsLgAymEgYJ/az8JP1QT93gVKDhmaW5uh4hvj76hqYA35QOSM0AAAA=[0m15
+originally caused by:
+ Started by user [8mha:AAAAlh+LCAAAAAAAAP9b85aBtbiIQTGjNKU4P08vOT+vOD8nVc83PyU1x6OyILUoJzMv2y+/JJUBAhiZGBgqihhk0NSjKDWzXb3RdlLBUSYGJk8GtpzUvPSSDB8G5tKinBIGIZ+sxLJE/ZzEvHT94JKizLx0a6BxUmjGOUNodHsLgAzOEgYu/dLi1CL9vNKcHACFIKlWvwAAAA==[0manonymous
+[EnvInject] - Loading node environment variables.
+Building in workspace /root/.jenkins/jobs/UI-HTML-5/workspace
+[workspace] $ /bin/sh -xe /tmp/hudson412750657053340850.sh
++ java -jar /root/selenium-server-standalone-2.39.0.jar -htmlSuite *firefox https://10.111.5.8:8888 /root/se34euca/selenium_ide/Jenkins_3.4.2/UI-manual-tests_5.html /root/Results/results5.html -trustAllSSLCertificates
+Jan 12, 2014 9:08:15 AM org.openqa.grid.selenium.GridLauncher main
+INFO: Launching a standalone server
+09:08:16.576 INFO - Java: Sun Microsystems Inc. 20.0-b12
+09:08:16.577 INFO - OS: Linux 3.2.0-37-generic-pae i386
+09:08:16.591 INFO - v2.39.0, with Core v2.39.0. Built from revision ff23eac
+09:08:16.657 INFO - Default driver org.openqa.selenium.iphone.IPhoneDriver registration is skipped: registration capabilities Capabilities [{platform=MAC, browserName=iPad, version=}] does not match with current platform: LINUX
+09:08:16.681 INFO - Default driver org.openqa.selenium.iphone.IPhoneDriver registration is skipped: registration capabilities Capabilities [{platform=MAC, browserName=iPhone, version=}] does not match with current platform: LINUX
+09:08:16.687 INFO - Default driver org.openqa.selenium.ie.InternetExplorerDriver registration is skipped: registration capabilities Capabilities [{platform=WINDOWS, ensureCleanSession=true, browserName=internet explorer, version=}] does not match with current platform: LINUX
+09:08:16.719 INFO - RemoteWebDriver instances should connect to: http://127.0.0.1:4444/wd/hub
+09:08:16.720 INFO - Version Jetty/5.1.x
+09:08:16.721 INFO - Started HttpContext[/selenium-server/driver,/selenium-server/driver]
+09:08:16.722 INFO - Started HttpContext[/selenium-server,/selenium-server]
+09:08:16.722 INFO - Started HttpContext[/,/]
+09:08:17.055 INFO - Started org.openqa.jetty.jetty.servlet.ServletHandler@93d6bc
+09:08:17.055 INFO - Started HttpContext[/wd,/wd]
+09:08:17.059 INFO - Started SocketListener on 0.0.0.0:4444
+09:08:17.059 INFO - Started org.openqa.jetty.jetty.Server@ef5502
+09:08:17.100 WARN - Caution: '/usr/bin/firefox': file is a script file, not a real executable.  The browser environment is no longer fully under RC control
+jar:file:/root/selenium-server-standalone-2.39.0.jar!/customProfileDirCUSTFFCHROME
+09:08:17.184 INFO - Preparing Firefox profile...
+09:08:18.490 INFO - Launching Firefox...
+09:08:19.695 INFO - Checking Resource aliases
+jar:file:/root/selenium-server-standalone-2.39.0.jar!/sslSupport
+09:08:21.984 INFO - Checking Resource aliases
+09:08:22.243 INFO - Started SocketListener on 0.0.0.0:34290
+jar:file:/root/selenium-server-standalone-2.39.0.jar!/sslSupport
+09:08:22.811 INFO - Started SocketListener on 0.0.0.0:43116
+09:38:18.823 INFO - Killing Firefox...
+HTML suite exception seen:
+org.openqa.selenium.server.SeleniumCommandTimedOutException
+	at org.openqa.selenium.server.htmlrunner.HTMLLauncher.runHTMLSuite(HTMLLauncher.java:155)
+	at org.openqa.selenium.server.htmlrunner.HTMLLauncher.runHTMLSuite(HTMLLauncher.java:198)
+	at org.openqa.selenium.server.SeleniumServer.runHtmlSuite(SeleniumServer.java:640)
+	at org.openqa.selenium.server.SeleniumServer.boot(SeleniumServer.java:305)
+	at org.openqa.selenium.server.SeleniumServer.main(SeleniumServer.java:245)
+	at org.openqa.grid.selenium.GridLauncher.main(GridLauncher.java:96)
+09:38:18.882 INFO - Shutting down...
+09:38:18.882 INFO - Stopping Acceptor ServerSocket[addr=0.0.0.0/0.0.0.0,port=0,localport=4444]
+Build step 'Execute shell' marked build as failure
+Finished: FAILURE

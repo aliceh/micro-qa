@@ -1,0 +1,38 @@
+Started by upstream project "[8mha:AAAAoR+LCAAAAAAAAP9b85aBtbiIQTGjNKU4P08vOT+vOD8nVc83PyU1x6OyILUoJzMv2y+/JJUBAhiZGBgqihhk0NSjKDWzXb3RdlLBUSYGJk8GtpzUvPSSDB8G5tKinBIGIZ+sxLJE/ZzEvHT94JKizLx0a6BxUmjGOUNodHsLgAyBEgYx/az8JP1QT93gVKDhmaW5uh4hvj76AKTLn/PLAAAA[0mUI-Selenium-HTML" build number [8mha:AAAAox+LCAAAAAAAAP9b85aBtbiIQTGjNKU4P08vOT+vOD8nVc83PyU1x6OyILUoJzMv2y+/JJUBAhiZGBgqihhk0NSjKDWzXb3RdlLBUSYGJk8GtpzUvPSSDB8G5tKinBIGIZ+sxLJE/ZzEvHT94JKizLx0a6BxUmjGOUNodHsLgAymEgYJ/az8JP1QT93gVKDhmaW5uh4hvj76xpYAdrqOc80AAAA=[0m39
+originally caused by:
+ Started by user [8mha:AAAAlh+LCAAAAAAAAP9b85aBtbiIQTGjNKU4P08vOT+vOD8nVc83PyU1x6OyILUoJzMv2y+/JJUBAhiZGBgqihhk0NSjKDWzXb3RdlLBUSYGJk8GtpzUvPSSDB8G5tKinBIGIZ+sxLJE/ZzEvHT94JKizLx0a6BxUmjGOUNodHsLgAzOEgYu/dLi1CL9vNKcHACFIKlWvwAAAA==[0manonymous
+[EnvInject] - Loading node environment variables.
+Building in workspace /root/.jenkins/jobs/UI-HTML-3/workspace
+[workspace] $ /bin/sh -xe /tmp/hudson8405583657697806065.sh
++ java -jar /root/selenium-server-standalone-2.39.0.jar -htmlSuite *firefox https://10.111.5.8:8888 /root/se34euca/selenium_ide/Jenkins_3.4.2/UI-manual-tests_3.html results3.html -trustAllSSLCertificates
+Jan 16, 2014 4:13:36 PM org.openqa.grid.selenium.GridLauncher main
+INFO: Launching a standalone server
+16:13:37.316 INFO - Java: Sun Microsystems Inc. 20.0-b12
+16:13:37.317 INFO - OS: Linux 3.2.0-37-generic-pae i386
+16:13:37.335 INFO - v2.39.0, with Core v2.39.0. Built from revision ff23eac
+16:13:37.400 INFO - Default driver org.openqa.selenium.ie.InternetExplorerDriver registration is skipped: registration capabilities Capabilities [{platform=WINDOWS, ensureCleanSession=true, browserName=internet explorer, version=}] does not match with current platform: LINUX
+16:13:37.429 INFO - Default driver org.openqa.selenium.iphone.IPhoneDriver registration is skipped: registration capabilities Capabilities [{platform=MAC, browserName=iPad, version=}] does not match with current platform: LINUX
+16:13:37.429 INFO - Default driver org.openqa.selenium.iphone.IPhoneDriver registration is skipped: registration capabilities Capabilities [{platform=MAC, browserName=iPhone, version=}] does not match with current platform: LINUX
+16:13:37.460 INFO - RemoteWebDriver instances should connect to: http://127.0.0.1:4444/wd/hub
+16:13:37.461 INFO - Version Jetty/5.1.x
+16:13:37.462 INFO - Started HttpContext[/selenium-server/driver,/selenium-server/driver]
+16:13:37.462 INFO - Started HttpContext[/selenium-server,/selenium-server]
+16:13:37.462 INFO - Started HttpContext[/,/]
+16:13:37.801 INFO - Started org.openqa.jetty.jetty.servlet.ServletHandler@e28b9
+16:13:37.801 INFO - Started HttpContext[/wd,/wd]
+16:13:37.805 INFO - Started SocketListener on 0.0.0.0:4444
+16:13:37.805 INFO - Started org.openqa.jetty.jetty.Server@f7f540
+16:13:37.844 WARN - Caution: '/usr/bin/firefox': file is a script file, not a real executable.  The browser environment is no longer fully under RC control
+jar:file:/root/selenium-server-standalone-2.39.0.jar!/customProfileDirCUSTFFCHROME
+16:13:37.928 INFO - Preparing Firefox profile...
+16:13:39.233 INFO - Launching Firefox...
+16:13:40.402 INFO - Checking Resource aliases
+jar:file:/root/selenium-server-standalone-2.39.0.jar!/sslSupport
+16:13:42.744 INFO - Checking Resource aliases
+16:13:43.025 INFO - Started SocketListener on 0.0.0.0:46730
+jar:file:/root/selenium-server-standalone-2.39.0.jar!/sslSupport
+16:13:43.403 INFO - Started SocketListener on 0.0.0.0:53331
+16:14:23.672 INFO - Shutting down...
+Build was aborted
+Archiving artifacts
+Finished: ABORTED

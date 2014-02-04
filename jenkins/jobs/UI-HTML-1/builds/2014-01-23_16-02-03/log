@@ -1,0 +1,47 @@
+Started by user [8mha:AAAAlh+LCAAAAAAAAP9b85aBtbiIQTGjNKU4P08vOT+vOD8nVc83PyU1x6OyILUoJzMv2y+/JJUBAhiZGBgqihhk0NSjKDWzXb3RdlLBUSYGJk8GtpzUvPSSDB8G5tKinBIGIZ+sxLJE/ZzEvHT94JKizLx0a6BxUmjGOUNodHsLgAzOEgYu/dLi1CL9vNKcHACFIKlWvwAAAA==[0manonymous
+[EnvInject] - Loading node environment variables.
+Building in workspace /var/lib/jenkins/workspace/UI-HTML-1
+
+Deleting project workspace... done
+
+[UI-HTML-1] $ /bin/sh -xe /tmp/hudson6194308157108167652.sh
++ git clone https://github.com/aliceh/se34euca
+Cloning into 'se34euca'...
++ java -jar /var/lib/jenkins/selenium-server-standalone-2.39.0.jar -userExtensions /var/lib/jenkins/user-extensions.js -htmlSuite *chrome http://10.111.5.8:8888 /var/lib/jenkins/workspace/UI-HTML-1/se34euca/selenium_ide/Jenkins_3.4.2/UI-manual-tests_1.html report1.html -trustAllSSLCertificates
+Jan 23, 2014 4:02:05 PM org.openqa.grid.selenium.GridLauncher main
+INFO: Launching a standalone server
+16:02:07.238 INFO - Java: Sun Microsystems Inc. 20.0-b12
+16:02:07.238 INFO - OS: Linux 3.2.0-37-generic-pae i386
+16:02:07.245 INFO - v2.39.0, with Core v2.39.0. Built from revision ff23eac
+16:02:07.289 INFO - Default driver org.openqa.selenium.ie.InternetExplorerDriver registration is skipped: registration capabilities Capabilities [{platform=WINDOWS, ensureCleanSession=true, browserName=internet explorer, version=}] does not match with current platform: LINUX
+16:02:07.289 INFO - Default driver org.openqa.selenium.iphone.IPhoneDriver registration is skipped: registration capabilities Capabilities [{platform=MAC, browserName=iPad, version=}] does not match with current platform: LINUX
+16:02:07.299 INFO - Default driver org.openqa.selenium.iphone.IPhoneDriver registration is skipped: registration capabilities Capabilities [{platform=MAC, browserName=iPhone, version=}] does not match with current platform: LINUX
+16:02:07.336 INFO - RemoteWebDriver instances should connect to: http://127.0.0.1:4444/wd/hub
+16:02:07.337 INFO - Version Jetty/5.1.x
+16:02:07.338 INFO - Started HttpContext[/selenium-server/driver,/selenium-server/driver]
+16:02:07.338 INFO - Started HttpContext[/selenium-server,/selenium-server]
+16:02:07.338 INFO - Started HttpContext[/,/]
+16:02:07.690 INFO - Started org.openqa.jetty.jetty.servlet.ServletHandler@a97b0b
+16:02:07.692 INFO - Started HttpContext[/wd,/wd]
+16:02:07.694 INFO - Started SocketListener on 0.0.0.0:4444
+16:02:07.694 INFO - Started org.openqa.jetty.jetty.Server@133f1d7
+16:02:07.722 WARN - Caution: '/usr/bin/firefox': file is a script file, not a real executable.  The browser environment is no longer fully under RC control
+jar:file:/var/lib/jenkins/selenium-server-standalone-2.39.0.jar!/customProfileDirCUSTFFCHROME
+16:02:07.765 INFO - Preparing Firefox profile...
+HTML suite exception seen:
+java.lang.RuntimeException: Timed out waiting for profile to be created!
+	at org.openqa.selenium.server.browserlaunchers.FirefoxChromeLauncher.waitForFullProfileToBeCreated(FirefoxChromeLauncher.java:307)
+	at org.openqa.selenium.server.browserlaunchers.FirefoxChromeLauncher.populateCustomProfileDirectory(FirefoxChromeLauncher.java:119)
+	at org.openqa.selenium.server.browserlaunchers.FirefoxChromeLauncher.launch(FirefoxChromeLauncher.java:89)
+	at org.openqa.selenium.server.browserlaunchers.FirefoxChromeLauncher.launchHTMLSuite(FirefoxChromeLauncher.java:339)
+	at org.openqa.selenium.server.htmlrunner.HTMLLauncher.runHTMLSuite(HTMLLauncher.java:146)
+	at org.openqa.selenium.server.htmlrunner.HTMLLauncher.runHTMLSuite(HTMLLauncher.java:198)
+	at org.openqa.selenium.server.SeleniumServer.runHtmlSuite(SeleniumServer.java:640)
+	at org.openqa.selenium.server.SeleniumServer.boot(SeleniumServer.java:305)
+	at org.openqa.selenium.server.SeleniumServer.main(SeleniumServer.java:245)
+	at org.openqa.grid.selenium.GridLauncher.main(GridLauncher.java:96)
+16:02:27.827 INFO - Shutting down...
+16:02:27.828 INFO - Stopping Acceptor ServerSocket[addr=0.0.0.0/0.0.0.0,port=0,localport=4444]
+Build step 'Execute shell' marked build as failure
+Archiving artifacts
+Finished: FAILURE

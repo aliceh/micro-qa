@@ -1,0 +1,8 @@
+Started by timer
+Started by timer
+[EnvInject] - Loading node environment variables.
+Building in workspace /root/.jenkins/jobs/UI-Selenium-HTML/workspace
+Starting build job [8mha:AAAAkB+LCAAAAAAAAP9b85aBtbiIQSajNKU4P08vOT+vOD8nVc+jsiC1KCczL9svvyTVzHb1RttJBUeZGJg8GdhyUvPSSzJ8GJhLi3JKGIR8shLLEvVzEvPS9YNLijLz0q0rihik0IxzhtAgwxgggJGJgaGiAMjgLGHg18/KT9IP9dT1CPH10TXUBwDoOZq6lAAAAA==[0mUI-HTML-1.
+Finished Build : [8mha:AAAAlB+LCAAAAAAAAP9b85aBtbiIQSajNKU4P08vOT+vOD8nVc+jsiC1KCczL9svvyTVzHb1RttJBUeZGJg8GdhyUvPSSzJ8GJhLi3JKGIR8shLLEvVzEvPS9YNLijLz0q0rihik0IxzhtAgwxgggJGJgaGiAMhgLmEQ1s/KT9IP9dT1CPH10TXUNzTT1wcABVVMtpgAAAA=[0m#16 of Job : [8mha:AAAAkB+LCAAAAAAAAP9b85aBtbiIQSajNKU4P08vOT+vOD8nVc+jsiC1KCczL9svvyTVzHb1RttJBUeZGJg8GdhyUvPSSzJ8GJhLi3JKGIR8shLLEvVzEvPS9YNLijLz0q0rihik0IxzhtAgwxgggJGJgaGiAMjgLGHg18/KT9IP9dT1CPH10TXUBwDoOZq6lAAAAA==[0mUI-HTML-1 with status :[8mha:AAAAlh+LCAAAAAAAAP9b85aBtbiIQSajNKU4P08vOT+vOD8nVc+jsiC1KCczL9svvyTVzHb1RttJBUeZGJg8GdhyUvPSSzJ8GJhLi3JKGIR8shLLEvVzEvPS9YNLijLz0q0rihik0IxzhtAgwxgggJGJgaGiAMhgL2GQ0s/KT9IP9dT1CPH10TXUNzTT14fqBACwnO/AnwAAAA==[0mFAILURE
+Build step 'MultiJob Phase' marked build as failure
+Finished: FAILURE

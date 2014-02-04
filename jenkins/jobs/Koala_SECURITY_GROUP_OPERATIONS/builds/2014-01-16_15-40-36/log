@@ -1,0 +1,96 @@
+Started by user [8mha:AAAAlh+LCAAAAAAAAP9b85aBtbiIQTGjNKU4P08vOT+vOD8nVc83PyU1x6OyILUoJzMv2y+/JJUBAhiZGBgqihhk0NSjKDWzXb3RdlLBUSYGJk8GtpzUvPSSDB8G5tKinBIGIZ+sxLJE/ZzEvHT94JKizLx0a6BxUmjGOUNodHsLgAzOEgYu/dLi1CL9vNKcHACFIKlWvwAAAA==[0manonymous
+[EnvInject] - Loading node environment variables.
+Building in workspace /root/.jenkins/jobs/Koala_1/workspace
+[workspace] $ /bin/sh -xe /tmp/hudson7566986609897487802.sh
++ java -jar /root/selenium-server-standalone-2.39.0.jar -htmlSuite *firefox http://10.111.101.112:8888 /root/se34euca/selenium_ide/KOALA/KEYPAIR_OPERATIONS.html Koala_results1.html -userExtensions /root/user-extensions.js -trustAllSSLCertificates
+Jan 16, 2014 3:40:37 PM org.openqa.grid.selenium.GridLauncher main
+INFO: Launching a standalone server
+15:40:38.402 INFO - Java: Sun Microsystems Inc. 20.0-b12
+15:40:38.403 INFO - OS: Linux 3.2.0-37-generic-pae i386
+15:40:38.426 INFO - v2.39.0, with Core v2.39.0. Built from revision ff23eac
+15:40:38.489 INFO - Default driver org.openqa.selenium.iphone.IPhoneDriver registration is skipped: registration capabilities Capabilities [{platform=MAC, browserName=iPhone, version=}] does not match with current platform: LINUX
+15:40:38.489 INFO - Default driver org.openqa.selenium.iphone.IPhoneDriver registration is skipped: registration capabilities Capabilities [{platform=MAC, browserName=iPad, version=}] does not match with current platform: LINUX
+15:40:38.509 INFO - Default driver org.openqa.selenium.ie.InternetExplorerDriver registration is skipped: registration capabilities Capabilities [{platform=WINDOWS, ensureCleanSession=true, browserName=internet explorer, version=}] does not match with current platform: LINUX
+15:40:38.552 INFO - RemoteWebDriver instances should connect to: http://127.0.0.1:4444/wd/hub
+15:40:38.553 INFO - Version Jetty/5.1.x
+15:40:38.553 INFO - Started HttpContext[/selenium-server/driver,/selenium-server/driver]
+15:40:38.554 INFO - Started HttpContext[/selenium-server,/selenium-server]
+15:40:38.554 INFO - Started HttpContext[/,/]
+15:41:16.903 INFO - Started org.openqa.jetty.jetty.servlet.ServletHandler@1f6df4c
+15:41:16.903 INFO - Started HttpContext[/wd,/wd]
+15:41:16.907 INFO - Started SocketListener on 0.0.0.0:4444
+15:41:16.907 INFO - Started org.openqa.jetty.jetty.Server@f7f540
+Can't find HTML Suite file:/root/se34euca/selenium_ide/KOALA/KEYPAIR_OPERATIONS.html:
+Usage: java -jar selenium-server.jar [-interactive] [options]
+
+  -port <nnnn>: the port number the selenium server should use
+    (default 4444)
+  -timeout <nnnn>: an integer number of seconds we should allow a
+    client to be idle
+  -browserTimeout <nnnn>: an integer number of seconds a browser is
+    allowed to hang
+  -interactive: puts you into interactive mode.  See the tutorial for
+    more details
+  -singleWindow: puts you into a mode where the test web site
+    executes in a frame. This mode should only be selected if the
+    application under test does not use frames.
+  -profilesLocation: Specifies the directory that holds the profiles
+    that java clients can use to start up selenium.  Currently
+    supported for Firefox only.
+  -forcedBrowserMode <browser>: sets the browser mode to a single
+    argument (e.g. "*iexplore") for all sessions, no matter what is
+    passed to getNewBrowserSession
+  -forcedBrowserModeRestOfLine <browser>: sets the browser mode to
+    all the remaining tokens on the line (e.g. "*custom
+    /some/random/place/iexplore.exe") for all sessions, no matter what
+    is passed to getNewBrowserSession
+  -userExtensions <file>: indicates a JavaScript file that will be
+    loaded into selenium
+  -browserSessionReuse: stops re-initialization and spawning of the
+    browser between tests
+  -avoidProxy: By default, we proxy every browser request; set this
+    flag to make the browser use our proxy only for URLs containing
+    '/selenium-server'
+  -firefoxProfileTemplate <dir>: normally, we generate a fresh empty
+    Firefox profile every time we launch.  You can specify a directory
+    to make us copy your profile directory instead.
+  -debug: puts you into debug mode, with more trace information and
+    diagnostics on the console
+  -browserSideLog: enables logging on the browser side; logging
+    messages will be transmitted to the server.  This can affect
+    performance.
+  -ensureCleanSession: If the browser does not have user profiles,
+    make sure every new session has no artifacts from previous
+    sessions.  For example, enabling this option will cause all user
+    cookies to be archived before launching IE, and restored after IE
+    is closed.
+  -trustAllSSLCertificates: Forces the Selenium proxy to trust all
+    SSL certificates.  This doesn't work in browsers that don't use the
+    Selenium proxy.
+  -log <logFileName>: writes lots of debug information out to a log
+    file
+  -htmlSuite <browser> <startURL> <suiteFile> <resultFile>: Run a
+    single HTML Selenese (Selenium Core) suite and then exit
+    immediately, using the specified browser (e.g. "*firefox") on the
+    specified URL (e.g. "http://www.google.com").  You need to specify
+    the absolute path to the HTML test suite as well as the path to the
+    HTML results file we'll generate.
+  -proxyInjectionMode: puts you into proxy injection mode, a mode
+    where the selenium server acts as a proxy server for all content
+    going to the test application.  Under this mode, multiple domains
+    can be visited, and the following additional flags are supported:
+
+    -dontInjectRegex <regex>: an optional regular expression that
+      proxy injection mode can use to know when to bypss injection
+    -userJsInjection <file>: specifies a JavaScript file which will
+      then be injected into all pages
+    -userContentTransformation <regex> <replacement>: a regular
+      expression which is matched against all test HTML content; the
+      second is a string which will replace matches.  These flags can
+      be used any number of times.  A simple example of how this could
+      be useful: if you add "-userContentTransformation https http"
+      then all "https" strings in the HTML of the test application will
+      be changed to be "http".
+Build step 'Execute shell' marked build as failure
+Archiving artifacts
+Finished: FAILURE

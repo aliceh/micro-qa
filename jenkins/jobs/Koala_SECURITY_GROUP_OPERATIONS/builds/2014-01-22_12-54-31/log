@@ -1,0 +1,81 @@
+Started by user [8mha:AAAAlh+LCAAAAAAAAP9b85aBtbiIQTGjNKU4P08vOT+vOD8nVc83PyU1x6OyILUoJzMv2y+/JJUBAhiZGBgqihhk0NSjKDWzXb3RdlLBUSYGJk8GtpzUvPSSDB8G5tKinBIGIZ+sxLJE/ZzEvHT94JKizLx0a6BxUmjGOUNodHsLgAzOEgYu/dLi1CL9vNKcHACFIKlWvwAAAA==[0manonymous
+[EnvInject] - Loading node environment variables.
+Building in workspace /root/.jenkins/jobs/Koala_1/workspace
+
+Deleting project workspace... done
+
+[workspace] $ /bin/sh -xe /tmp/hudson1202471588635930831.sh
++ git clone https://github.com/eucalyptus/se34euca
+Cloning into 'se34euca'...
++ cd /root/se34euca
++ git checkout master
+Already on 'master'
++ cd
++ java -jar /root/selenium-server-standalone-2.39.0.jar -userExtensions /root/user-extensions.js -htmlSuite *firefox http://10.111.101.112:8888 /root/se34euca/selenium_ide/KOALA/SECURITY_GROUP_OPERATIONS.html Koala_SECURITY_GROUP_OPS.html -trustAllSSLCertificates
+Jan 22, 2014 12:54:34 PM org.openqa.grid.selenium.GridLauncher main
+INFO: Launching a standalone server
+12:54:35.641 INFO - Java: Sun Microsystems Inc. 20.0-b12
+12:54:35.642 INFO - OS: Linux 3.2.0-37-generic-pae i386
+12:54:35.659 INFO - v2.39.0, with Core v2.39.0. Built from revision ff23eac
+12:54:35.728 INFO - Default driver org.openqa.selenium.ie.InternetExplorerDriver registration is skipped: registration capabilities Capabilities [{platform=WINDOWS, ensureCleanSession=true, browserName=internet explorer, version=}] does not match with current platform: LINUX
+12:54:35.756 INFO - Default driver org.openqa.selenium.iphone.IPhoneDriver registration is skipped: registration capabilities Capabilities [{platform=MAC, browserName=iPad, version=}] does not match with current platform: LINUX
+12:54:35.757 INFO - Default driver org.openqa.selenium.iphone.IPhoneDriver registration is skipped: registration capabilities Capabilities [{platform=MAC, browserName=iPhone, version=}] does not match with current platform: LINUX
+12:54:35.787 INFO - RemoteWebDriver instances should connect to: http://127.0.0.1:4444/wd/hub
+12:54:35.788 INFO - Version Jetty/5.1.x
+12:54:35.789 INFO - Started HttpContext[/selenium-server/driver,/selenium-server/driver]
+12:54:35.790 INFO - Started HttpContext[/selenium-server,/selenium-server]
+12:54:35.790 INFO - Started HttpContext[/,/]
+12:54:36.081 INFO - Started org.openqa.jetty.jetty.servlet.ServletHandler@e28b9
+12:54:36.081 INFO - Started HttpContext[/wd,/wd]
+12:54:36.085 INFO - Started SocketListener on 0.0.0.0:4444
+12:54:36.085 INFO - Started org.openqa.jetty.jetty.Server@f7f540
+12:54:36.132 WARN - Caution: '/usr/bin/firefox': file is a script file, not a real executable.  The browser environment is no longer fully under RC control
+jar:file:/root/selenium-server-standalone-2.39.0.jar!/customProfileDirCUSTFFCHROME
+12:54:36.212 INFO - Preparing Firefox profile...
+12:54:37.567 INFO - Launching Firefox...
+12:54:38.721 INFO - Checking Resource aliases
+jar:file:/root/selenium-server-standalone-2.39.0.jar!/sslSupport
+12:54:41.265 INFO - Checking Resource aliases
+12:54:41.517 INFO - Started SocketListener on 0.0.0.0:45979
+12:55:07.951 INFO - Received posted results
+koala_logout.html
+<a href="koala_logout.html">koala_logout</a></td></tr>
+</tbody></table>
+
+
+
+verify-s.group-number-1.html
+<a href="verify-s.group-number-1.html">verify-s.group-number-1</a></td></tr>
+<tr class="  status_passed"><td>
+delete-s.group-from-item-page.html
+<a href="delete-s.group-from-item-page.html">delete-s.group-from-item-page</a></td></tr>
+<tr class="  status_passed"><td>
+verify-s.group-number-2.html
+<a href="verify-s.group-number-2.html">verify-s.group-number-2</a></td></tr>
+<tr class="  status_passed"><td>
+create-s-group-with-rules-from-dashboard.html
+<a href="create-s-group-with-rules-from-dashboard.html">create-s-group-with-rules-from-dashboard</a></td></tr>
+<tr class="  status_passed"><td>
+verify-s.group-number-1.html
+<a href="verify-s.group-number-1.html">verify-s.group-number-1</a></td></tr>
+<tr class="  status_passed"><td>
+delete-s-group-from-landing-page.html
+<a href="delete-s-group-from-landing-page.html">delete-s-group-from-landing-page</a></td></tr>
+<tr class="  status_passed"><td>
+verify-s.group-number-2.html
+<a href="verify-s.group-number-2.html">verify-s.group-number-2</a></td></tr>
+<tr class="  status_passed"><td>
+create-s-group-with-rules-and-tags.html
+<a href="create-s-group-with-rules-and-tags.html">create-s-group-with-rules-and-tags</a></td></tr>
+<tr class="  status_passed"><td>
+koala_login.html
+<a href="koala_login.html">koala_login</a></td></tr>
+<tr class="  status_passed"><td>
+12:55:08.581 INFO - Killing Firefox...
+12:55:08.645 INFO - Shutting down...
+12:55:08.645 INFO - Stopping Acceptor ServerSocket[addr=0.0.0.0/0.0.0.0,port=0,localport=4444]
+Archiving artifacts
+ERROR: No artifacts found that match the file pattern "Koala_SECURITY_GROUP_OPS.html". Configuration error?
+[8mha:AAAAWB+LCAAAAAAAAP9b85aBtbiIQSmjNKU4P08vOT+vOD8nVc8DzHWtSE4tKMnMz/PLL0ldFVf2c+b/lb5MDAwVRQxSaBqcITRIIQMEMIIUFgAAckCEiWAAAAA=[0mERROR: ‘Koala_SECURITY_GROUP_OPS.html’ doesn’t match anything
+[8mha:AAAAWB+LCAAAAAAAAP9b85aBtbiIQSmjNKU4P08vOT+vOD8nVc8DzHWtSE4tKMnMz/PLL0ldFVf2c+b/lb5MDAwVRQxSaBqcITRIIQMEMIIUFgAAckCEiWAAAAA=[0mBuild step 'Archive the artifacts' changed build result to FAILURE
+Finished: FAILURE

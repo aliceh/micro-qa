@@ -1,0 +1,16 @@
+Started by user [8mha:AAAAlh+LCAAAAAAAAP9b85aBtbiIQTGjNKU4P08vOT+vOD8nVc83PyU1x6OyILUoJzMv2y+/JJUBAhiZGBgqihhk0NSjKDWzXb3RdlLBUSYGJk8GtpzUvPSSDB8G5tKinBIGIZ+sxLJE/ZzEvHT94JKizLx0a6BxUmjGOUNodHsLgAzOEgYu/dLi1CL9vNKcHACFIKlWvwAAAA==[0manonymous
+[EnvInject] - Loading node environment variables.
+Building in workspace /var/lib/jenkins/workspace/UI-HTML-1
+
+Deleting project workspace... done
+
+[UI-HTML-1] $ /bin/sh -xe /tmp/hudson57344176111377944.sh
++ git clone https://github.com/aliceh/se34euca
+Cloning into 'se34euca'...
++ java -jar /var/lib/jenkins/selenium-server-standalone-2.39.0.jar -userExtensions /var/lib/jenkins/user-extensions.js -htmlSuite *firefox http://10.111.5.8:8888 /var/lib/jenkins/workspace/UI-HTML-1/se34euca/selenium_ide/Jenkins_3.4.2/UI-manual-tests_1.html report1.html -firefoxProfileTemplate /root/.mozilla/firefox/0bvcbjre.Selenium -trustAllSSLCertificates
+Jan 23, 2014 2:16:25 PM org.openqa.grid.selenium.GridLauncher main
+INFO: Launching a standalone server
+Firefox profile template doesn't exist: /root/.mozilla/firefox/0bvcbjre.Selenium
+Build step 'Execute shell' marked build as failure
+Archiving artifacts
+Finished: FAILURE

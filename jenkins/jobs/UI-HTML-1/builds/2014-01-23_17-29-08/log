@@ -1,0 +1,112 @@
+Started by user [8mha:AAAAlh+LCAAAAAAAAP9b85aBtbiIQTGjNKU4P08vOT+vOD8nVc83PyU1x6OyILUoJzMv2y+/JJUBAhiZGBgqihhk0NSjKDWzXb3RdlLBUSYGJk8GtpzUvPSSDB8G5tKinBIGIZ+sxLJE/ZzEvHT94JKizLx0a6BxUmjGOUNodHsLgAzOEgYu/dLi1CL9vNKcHACFIKlWvwAAAA==[0manonymous
+[EnvInject] - Loading node environment variables.
+Building in workspace /var/lib/jenkins/workspace/UI-HTML-1
+
+Deleting project workspace... done
+
+[UI-HTML-1] $ /bin/sh -xe /tmp/hudson3814209740619508308.sh
++ git clone https://github.com/aliceh/se34euca
+Cloning into 'se34euca'...
++ export PATH=/usr/local/sbin:/usr/local/bin:/usr/bin:/usr/sbin:/sbin:/bin:/usr/lib/firefox/firefox
++ export DISPLAY=:1
++ sudo java -jar /var/lib/jenkins/selenium-server-standalone-2.39.0.jar -userExtensions /var/lib/jenkins/user-extensions.js -htmlSuite *firefox https://10.111.5.8:8888 /root/se34euca/selenium_ide/Jenkins_3.4.2/UI-manual-tests_1.html report1.html -trustAllSSLCertificates -debug
+Jan 23, 2014 5:29:11 PM org.openqa.grid.selenium.GridLauncher main
+INFO: Launching a standalone server
+17:29:13.144 INFO - Java: Sun Microsystems Inc. 20.0-b12
+17:29:13.145 INFO - OS: Linux 3.2.0-37-generic-pae i386
+17:29:13.152 INFO - v2.39.0, with Core v2.39.0. Built from revision ff23eac
+17:29:13.153 INFO - Selenium server running in debug mode.
+17:29:13.161 DEBUG - add component: SocketListener0@0.0.0.0:4444
+17:29:13.169 DEBUG - add component: org.openqa.jetty.http.ResourceCache@1404536
+17:29:13.171 DEBUG - add component: org.openqa.selenium.server.ProxyHandler in HttpContext[/,/]
+17:29:13.171 DEBUG - add component: HttpContext[/,/]
+17:29:13.172 DEBUG - Added HttpContext[/,/] for host *
+17:29:13.172 DEBUG - add component: org.openqa.jetty.http.ResourceCache@fa9cf
+17:29:13.173 DEBUG - added SC{BASIC,null,user,CONFIDENTIAL} at /org/openqa/selenium/tests/html/basicAuth/*
+17:29:13.178 DEBUG - add component: org.openqa.jetty.http.handler.SecurityHandler in HttpContext[/selenium-server,/selenium-server]
+17:29:13.181 DEBUG - add component: org.openqa.selenium.server.StaticContentHandler in HttpContext[/selenium-server,/selenium-server]
+17:29:13.182 DEBUG - add component: org.openqa.selenium.server.SessionExtensionJsHandler in HttpContext[/selenium-server,/selenium-server]
+17:29:13.182 DEBUG - add component: org.openqa.selenium.server.htmlrunner.SingleTestSuiteResourceHandler in HttpContext[/selenium-server,/selenium-server]
+17:29:13.187 DEBUG - add component: org.openqa.selenium.server.htmlrunner.SeleniumHTMLRunnerResultsHandler@136228
+17:29:13.187 DEBUG - add component: HttpContext[/selenium-server,/selenium-server]
+17:29:13.187 DEBUG - Added HttpContext[/selenium-server,/selenium-server] for host *
+17:29:13.197 INFO - Default driver org.openqa.selenium.iphone.IPhoneDriver registration is skipped: registration capabilities Capabilities [{platform=MAC, browserName=iPad, version=}] does not match with current platform: LINUX
+17:29:13.197 INFO - Default driver org.openqa.selenium.iphone.IPhoneDriver registration is skipped: registration capabilities Capabilities [{platform=MAC, browserName=iPhone, version=}] does not match with current platform: LINUX
+17:29:13.197 INFO - Default driver org.openqa.selenium.ie.InternetExplorerDriver registration is skipped: registration capabilities Capabilities [{platform=WINDOWS, ensureCleanSession=true, browserName=internet explorer, version=}] does not match with current platform: LINUX
+17:29:13.220 DEBUG - add component: org.openqa.jetty.http.ResourceCache@cf2c80
+17:29:13.230 DEBUG - add component: org.openqa.selenium.server.SeleniumDriverResourceHandler in HttpContext[/selenium-server,/selenium-server]
+17:29:13.231 DEBUG - add component: HttpContext[/selenium-server/driver,/selenium-server/driver]
+17:29:13.231 DEBUG - Added HttpContext[/selenium-server/driver,/selenium-server/driver] for host *
+17:29:13.231 DEBUG - add component: org.openqa.jetty.http.ResourceCache@13c5982
+17:29:13.239 DEBUG - add component: WebDriver remote server
+17:29:13.242 DEBUG - add component: org.openqa.jetty.jetty.servlet.HashSessionManager@117a8bd
+17:29:13.242 DEBUG - add component: org.openqa.jetty.jetty.servlet.ServletHandler@471e30
+17:29:13.242 INFO - RemoteWebDriver instances should connect to: http://127.0.0.1:4444/wd/hub
+17:29:13.243 DEBUG - add component: HttpContext[/wd,/wd]
+17:29:13.243 DEBUG - Added HttpContext[/wd,/wd] for host *
+17:29:13.243 DEBUG - Starting org.openqa.jetty.jetty.Server@133f1d7
+17:29:13.244 INFO - Version Jetty/5.1.x
+17:29:13.244 DEBUG - LISTENERS: [SocketListener0@0.0.0.0:4444]
+17:29:13.244 DEBUG - HANDLER: {null={/selenium-server/driver/*=[HttpContext[/selenium-server/driver,/selenium-server/driver]], /selenium-server/*=[HttpContext[/selenium-server,/selenium-server]], /=[HttpContext[/,/]], /wd/*=[HttpContext[/wd,/wd]]}}
+17:29:13.244 DEBUG - Starting HttpContext[/selenium-server/driver,/selenium-server/driver]
+17:29:13.244 DEBUG - Init classloader from null, sun.misc.Launcher$AppClassLoader@3e25a5 for HttpContext[/selenium-server/driver,/selenium-server/driver]
+17:29:13.247 INFO - Started HttpContext[/selenium-server/driver,/selenium-server/driver]
+17:29:13.248 DEBUG - Starting HttpContext[/selenium-server,/selenium-server]
+17:29:13.248 DEBUG - Init classloader from null, sun.misc.Launcher$AppClassLoader@3e25a5 for HttpContext[/selenium-server,/selenium-server]
+17:29:13.248 DEBUG - Started org.openqa.jetty.http.handler.SecurityHandler in HttpContext[/selenium-server,/selenium-server]
+17:29:13.248 DEBUG - Started org.openqa.selenium.server.StaticContentHandler in HttpContext[/selenium-server,/selenium-server]
+17:29:13.248 DEBUG - Started org.openqa.selenium.server.SessionExtensionJsHandler in HttpContext[/selenium-server,/selenium-server]
+17:29:13.248 DEBUG - Started org.openqa.selenium.server.htmlrunner.SingleTestSuiteResourceHandler in HttpContext[/selenium-server,/selenium-server]
+17:29:13.249 DEBUG - Started org.openqa.selenium.server.SeleniumDriverResourceHandler in HttpContext[/selenium-server,/selenium-server]
+17:29:13.249 INFO - Started HttpContext[/selenium-server,/selenium-server]
+17:29:13.249 DEBUG - Starting HttpContext[/,/]
+17:29:13.249 DEBUG - Init classloader from null, sun.misc.Launcher$AppClassLoader@3e25a5 for HttpContext[/,/]
+17:29:13.249 DEBUG - Started org.openqa.selenium.server.ProxyHandler in HttpContext[/,/]
+17:29:13.249 INFO - Started HttpContext[/,/]
+17:29:13.249 DEBUG - Starting HttpContext[/wd,/wd]
+17:29:13.249 DEBUG - Init classloader from null, sun.misc.Launcher$AppClassLoader@3e25a5 for HttpContext[/wd,/wd]
+17:29:13.249 DEBUG - Starting org.openqa.jetty.jetty.servlet.ServletHandler@471e30
+17:29:13.250 DEBUG - New random session seed
+17:29:43.006 DEBUG - Started holder of class org.openqa.selenium.remote.server.DriverServlet
+17:29:43.007 INFO - Started org.openqa.jetty.jetty.servlet.ServletHandler@471e30
+17:29:43.007 INFO - Started HttpContext[/wd,/wd]
+17:29:43.012 DEBUG - Session scavenger period = 30s
+17:29:43.019 INFO - Started SocketListener on 0.0.0.0:4444
+17:29:43.019 INFO - Started org.openqa.jetty.jetty.Server@133f1d7
+17:29:43.036 DEBUG - Requested browser string '*firefox' matches *firefox 
+17:29:43.037 DEBUG - Discovering Firefox 2...
+17:29:43.042 DEBUG - Discovering Firefox 2...
+17:29:43.043 DEBUG - Checking whether Firefox 2 launcher at :'/Applications/Minefield.app/Contents/MacOS/firefox-bin' is valid...
+17:29:43.043 DEBUG - Checking whether Firefox 2 launcher at :'/Applications/Firefox-2.app/Contents/MacOS/firefox-bin' is valid...
+17:29:43.043 DEBUG - Checking whether Firefox 2 launcher at :'/Applications/Firefox.app/Contents/MacOS/firefox-bin' is valid...
+17:29:43.043 DEBUG - Checking whether Firefox 2 launcher at :'/usr/lib/firefox/firefox-bin' is valid...
+17:29:43.054 DEBUG - Did not find Firefox 2, now discovering Firefox 3...
+17:29:43.054 DEBUG - Discovering Firefox 3...
+17:29:43.060 DEBUG - Checking whether Firefox 3 launcher at :'/usr/lib/firefox-addons/firefox-bin' is valid...
+17:29:43.060 DEBUG - Checking whether Firefox 3 launcher at :'/usr/lib/firefox-addons/firefox' is valid...
+17:29:43.060 DEBUG - Checking whether Firefox 3 launcher at :'/usr/bin/firefox' is valid...
+17:29:43.062 WARN - Caution: '/usr/bin/firefox': file is a script file, not a real executable.  The browser environment is no longer fully under RC control
+17:29:43.062 DEBUG - Discovered valid Firefox 3 launcher  : '/usr/bin/firefox'
+jar:file:/var/lib/jenkins/selenium-server-standalone-2.39.0.jar!/customProfileDirCUSTFFCHROME
+17:29:43.067 DEBUG - Extracting /customProfileDirCUSTFFCHROME to /tmp/customProfileDir983026
+17:29:43.115 INFO - Preparing Firefox profile...
+HTML suite exception seen:
+java.lang.RuntimeException: Timed out waiting for profile to be created!
+	at org.openqa.selenium.server.browserlaunchers.FirefoxChromeLauncher.waitForFullProfileToBeCreated(FirefoxChromeLauncher.java:307)
+	at org.openqa.selenium.server.browserlaunchers.FirefoxChromeLauncher.populateCustomProfileDirectory(FirefoxChromeLauncher.java:119)
+	at org.openqa.selenium.server.browserlaunchers.FirefoxChromeLauncher.launch(FirefoxChromeLauncher.java:89)
+	at org.openqa.selenium.server.browserlaunchers.FirefoxChromeLauncher.launchHTMLSuite(FirefoxChromeLauncher.java:339)
+	at org.openqa.selenium.server.browserlaunchers.FirefoxLauncher.launchHTMLSuite(FirefoxLauncher.java:110)
+	at org.openqa.selenium.server.htmlrunner.HTMLLauncher.runHTMLSuite(HTMLLauncher.java:146)
+	at org.openqa.selenium.server.htmlrunner.HTMLLauncher.runHTMLSuite(HTMLLauncher.java:198)
+	at org.openqa.selenium.server.SeleniumServer.runHtmlSuite(SeleniumServer.java:640)
+	at org.openqa.selenium.server.SeleniumServer.boot(SeleniumServer.java:305)
+	at org.openqa.selenium.server.SeleniumServer.main(SeleniumServer.java:245)
+	at org.openqa.grid.selenium.GridLauncher.main(GridLauncher.java:96)
+17:30:03.180 INFO - Shutting down...
+17:30:03.181 DEBUG - Stopping org.openqa.jetty.jetty.Server@133f1d7
+17:30:03.181 DEBUG - closing ServerSocket[addr=0.0.0.0/0.0.0.0,port=0,localport=4444]
+17:30:03.182 INFO - Stopping Acceptor ServerSocket[addr=0.0.0.0/0.0.0.0,port=0,localport=4444]
+Build step 'Execute shell' marked build as failure
+Archiving artifacts
+Finished: FAILURE

@@ -1,0 +1,12 @@
+Started by user [8mha:AAAAlh+LCAAAAAAAAP9b85aBtbiIQTGjNKU4P08vOT+vOD8nVc83PyU1x6OyILUoJzMv2y+/JJUBAhiZGBgqihhk0NSjKDWzXb3RdlLBUSYGJk8GtpzUvPSSDB8G5tKinBIGIZ+sxLJE/ZzEvHT94JKizLx0a6BxUmjGOUNodHsLgAzOEgYu/dLi1CL9vNKcHACFIKlWvwAAAA==[0manonymous
+[EnvInject] - Loading node environment variables.
+Building in workspace /var/lib/jenkins/workspace/UI-HTML-1
+
+Deleting project workspace... done
+
+[UI-HTML-1] $ /bin/sh -xe /tmp/hudson6583280365643348458.sh
++ cd /root
+/tmp/hudson6583280365643348458.sh: 2: cd: can't cd to /root
+Build step 'Execute shell' marked build as failure
+Archiving artifacts
+Finished: FAILURE

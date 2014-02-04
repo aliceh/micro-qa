@@ -1,0 +1,85 @@
+Started by upstream project "[8mha:AAAAoR+LCAAAAAAAAP9b85aBtbiIQTGjNKU4P08vOT+vOD8nVc83PyU1x6OyILUoJzMv2y+/JJUBAhiZGBgqihhk0NSjKDWzXb3RdlLBUSYGJk8GtpzUvPSSDB8G5tKinBIGIZ+sxLJE/ZzEvHT94JKizLx0a6BxUmjGOUNodHsLgAyBEgYx/az8JP1QT93gVKDhmaW5uh4hvj76AKTLn/PLAAAA[0mUI-Selenium-HTML" build number [8mha:AAAAox+LCAAAAAAAAP9b85aBtbiIQTGjNKU4P08vOT+vOD8nVc83PyU1x6OyILUoJzMv2y+/JJUBAhiZGBgqihhk0NSjKDWzXb3RdlLBUSYGJk8GtpzUvPSSDB8G5tKinBIGIZ+sxLJE/ZzEvHT94JKizLx0a6BxUmjGOUNodHsLgAymEgYJ/az8JP1QT93gVKDhmaW5uh4hvj76hiYASaQJP80AAAA=[0m14
+originally caused by:
+ Started by user [8mha:AAAAlh+LCAAAAAAAAP9b85aBtbiIQTGjNKU4P08vOT+vOD8nVc83PyU1x6OyILUoJzMv2y+/JJUBAhiZGBgqihhk0NSjKDWzXb3RdlLBUSYGJk8GtpzUvPSSDB8G5tKinBIGIZ+sxLJE/ZzEvHT94JKizLx0a6BxUmjGOUNodHsLgAzOEgYu/dLi1CL9vNKcHACFIKlWvwAAAA==[0manonymous
+[EnvInject] - Loading node environment variables.
+Building in workspace /root/.jenkins/jobs/UI-HTML-4/workspace
+[workspace] $ /bin/sh -xe /tmp/hudson7800201207808698296.sh
++ java -jar /root/selenium-server-standalone-2.39.0.jar -htmlSuite *firefox https://10.111.5.8:8888 /root/se34euca/selenium_ide/Jenkins_3.4.2/UI-manual-tests_4.html /root/Results/results1.html -trustAllSSLCertificates
+Jan 11, 2014 11:01:44 PM org.openqa.grid.selenium.GridLauncher main
+INFO: Launching a standalone server
+23:01:46.208 INFO - Java: Sun Microsystems Inc. 20.0-b12
+23:01:46.208 INFO - OS: Linux 3.2.0-37-generic-pae i386
+23:01:46.227 INFO - v2.39.0, with Core v2.39.0. Built from revision ff23eac
+23:01:46.296 INFO - Default driver org.openqa.selenium.ie.InternetExplorerDriver registration is skipped: registration capabilities Capabilities [{platform=WINDOWS, ensureCleanSession=true, browserName=internet explorer, version=}] does not match with current platform: LINUX
+23:01:46.324 INFO - Default driver org.openqa.selenium.iphone.IPhoneDriver registration is skipped: registration capabilities Capabilities [{platform=MAC, browserName=iPad, version=}] does not match with current platform: LINUX
+23:01:46.325 INFO - Default driver org.openqa.selenium.iphone.IPhoneDriver registration is skipped: registration capabilities Capabilities [{platform=MAC, browserName=iPhone, version=}] does not match with current platform: LINUX
+23:01:46.363 INFO - RemoteWebDriver instances should connect to: http://127.0.0.1:4444/wd/hub
+23:01:46.364 INFO - Version Jetty/5.1.x
+23:01:46.365 INFO - Started HttpContext[/selenium-server/driver,/selenium-server/driver]
+23:01:46.366 INFO - Started HttpContext[/selenium-server,/selenium-server]
+23:01:46.366 INFO - Started HttpContext[/,/]
+23:01:46.703 INFO - Started org.openqa.jetty.jetty.servlet.ServletHandler@193a66f
+23:01:46.703 INFO - Started HttpContext[/wd,/wd]
+23:01:46.707 INFO - Started SocketListener on 0.0.0.0:4444
+23:01:46.707 INFO - Started org.openqa.jetty.jetty.Server@f7f540
+23:01:46.748 WARN - Caution: '/usr/bin/firefox': file is a script file, not a real executable.  The browser environment is no longer fully under RC control
+jar:file:/root/selenium-server-standalone-2.39.0.jar!/customProfileDirCUSTFFCHROME
+23:01:46.832 INFO - Preparing Firefox profile...
+23:01:48.136 INFO - Launching Firefox...
+23:01:49.325 INFO - Checking Resource aliases
+jar:file:/root/selenium-server-standalone-2.39.0.jar!/sslSupport
+23:01:51.635 INFO - Checking Resource aliases
+23:01:51.907 INFO - Started SocketListener on 0.0.0.0:47016
+jar:file:/root/selenium-server-standalone-2.39.0.jar!/sslSupport
+23:01:52.451 INFO - Started SocketListener on 0.0.0.0:56127
+23:04:47.496 INFO - Received posted results
+disassociate-ip-land-ip.html
+<a href="disassociate-ip-land-ip.html">disassociate-ip-land-ip.html</a></td></tr>
+</tbody></table>
+
+
+
+associate-ip-land-ip.html
+<a href="associate-ip-land-ip.html">associate-ip-land-ip.html</a></td></tr>
+<tr class="  status_passed"><td>
+snapshot-to-volume.html
+<a href="snapshot-to-volume.html">snapshot-to-volume.html</a></td></tr>
+<tr class="  status_passed"><td>
+disassociate-ip-land-instances.html
+<a href="disassociate-ip-land-instances.html">disassociate-ip-land-instances.html</a></td></tr>
+<tr class="  status_passed"><td>
+associate-ip-land-ip.html
+<a href="associate-ip-land-ip.html">associate-ip-land-ip.html</a></td></tr>
+<tr class="  status_passed"><td>
+chk-allocate-ip-1.html
+<a href="chk-allocate-ip-1.html">chk-allocate-ip-1.html</a></td></tr>
+<tr class="  status_passed"><td>
+allocate-ip.html
+<a href="allocate-ip.html">allocate-ip.html</a></td></tr>
+<tr class="  status_passed"><td>
+chk-launch-myinst.html
+<a href="chk-launch-myinst.html">chk-launch-myinst.html</a></td></tr>
+<tr class="  status_passed"><td>
+launch-inst-name-myinst.html
+<a href="launch-inst-name-myinst.html">launch-inst-name-myinst.html</a></td></tr>
+<tr class="  status_passed"><td>
+chk-terminate-instance.html
+<a href="chk-terminate-instance.html">chk-terminate-instance.html</a></td></tr>
+<tr class="  status_passed"><td>
+terminate-all-instances.html
+<a href="terminate-all-instances.html">terminate-all-instances.html</a></td></tr>
+<tr class="  status_passed"><td>
+chk-launch-instance-from-dboard.html
+<a href="chk-launch-instance-from-dboard.html">chk-launch-instance-from-dboard.html</a></td></tr>
+<tr class="  status_passed"><td>
+launch-instance-from-dboard.html
+<a href="launch-instance-from-dboard.html">launch-instance-from-dboard.html</a></td></tr>
+<tr class="  status_passed"><td>
+release-ip-while-associated.html
+<a href="release-ip-while-associated.html">release-ip-while-associated.html</a></td></tr>
+<tr class="  status_passed"><td>
+login_ui-test-acct-00_user01.html
+<a href="login_ui-test-acct-00_user01.html">login_ui-test-acct-00_user01</a></td></tr>
+<tr class="  status_passed"><td>
+23:04:47.704 INFO - Killing Firefox...
+Finished: SUCCESS

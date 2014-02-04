@@ -1,0 +1,107 @@
+Started by user [8mha:AAAAlh+LCAAAAAAAAP9b85aBtbiIQTGjNKU4P08vOT+vOD8nVc83PyU1x6OyILUoJzMv2y+/JJUBAhiZGBgqihhk0NSjKDWzXb3RdlLBUSYGJk8GtpzUvPSSDB8G5tKinBIGIZ+sxLJE/ZzEvHT94JKizLx0a6BxUmjGOUNodHsLgAzOEgYu/dLi1CL9vNKcHACFIKlWvwAAAA==[0manonymous
+[EnvInject] - Loading node environment variables.
+Building in workspace /var/lib/jenkins/workspace/Selenium
+
+Deleting project workspace... done
+
+[Selenium] $ /bin/sh -xe /tmp/hudson643449189127664352.sh
++ sudo java -jar /var/lib/jenkins/selenium-server-standalone-2.39.0.jar -userExtensions /var/lib/jenkins/user-extensions.js -htmlSuite *firefox https://10.111.5.8:8888 /root/se34euca/selenium_ide/Jenkins_3.4.2/UI-manual-tests_1.html report1.html -trustAllSSLCertificates -debug
+Jan 23, 2014 8:02:46 PM org.openqa.grid.selenium.GridLauncher main
+INFO: Launching a standalone server
+20:02:47.676 INFO - Java: Sun Microsystems Inc. 20.0-b12
+20:02:47.676 INFO - OS: Linux 3.2.0-37-generic-pae i386
+20:02:47.683 INFO - v2.39.0, with Core v2.39.0. Built from revision ff23eac
+20:02:47.683 INFO - Selenium server running in debug mode.
+20:02:47.691 DEBUG - add component: SocketListener0@0.0.0.0:4444
+20:02:47.700 DEBUG - add component: org.openqa.jetty.http.ResourceCache@1404536
+20:02:47.703 DEBUG - add component: org.openqa.selenium.server.ProxyHandler in HttpContext[/,/]
+20:02:47.703 DEBUG - add component: HttpContext[/,/]
+20:02:47.704 DEBUG - Added HttpContext[/,/] for host *
+20:02:47.705 DEBUG - add component: org.openqa.jetty.http.ResourceCache@fa9cf
+20:02:47.706 DEBUG - added SC{BASIC,null,user,CONFIDENTIAL} at /org/openqa/selenium/tests/html/basicAuth/*
+20:02:47.711 DEBUG - add component: org.openqa.jetty.http.handler.SecurityHandler in HttpContext[/selenium-server,/selenium-server]
+20:02:47.713 DEBUG - add component: org.openqa.selenium.server.StaticContentHandler in HttpContext[/selenium-server,/selenium-server]
+20:02:47.714 DEBUG - add component: org.openqa.selenium.server.SessionExtensionJsHandler in HttpContext[/selenium-server,/selenium-server]
+20:02:47.714 DEBUG - add component: org.openqa.selenium.server.htmlrunner.SingleTestSuiteResourceHandler in HttpContext[/selenium-server,/selenium-server]
+20:02:47.717 DEBUG - add component: org.openqa.selenium.server.htmlrunner.SeleniumHTMLRunnerResultsHandler@136228
+20:02:47.718 DEBUG - add component: HttpContext[/selenium-server,/selenium-server]
+20:02:47.718 DEBUG - Added HttpContext[/selenium-server,/selenium-server] for host *
+20:02:47.727 INFO - Default driver org.openqa.selenium.iphone.IPhoneDriver registration is skipped: registration capabilities Capabilities [{platform=MAC, browserName=iPad, version=}] does not match with current platform: LINUX
+20:02:47.728 INFO - Default driver org.openqa.selenium.iphone.IPhoneDriver registration is skipped: registration capabilities Capabilities [{platform=MAC, browserName=iPhone, version=}] does not match with current platform: LINUX
+20:02:47.728 INFO - Default driver org.openqa.selenium.ie.InternetExplorerDriver registration is skipped: registration capabilities Capabilities [{platform=WINDOWS, ensureCleanSession=true, browserName=internet explorer, version=}] does not match with current platform: LINUX
+20:02:47.752 DEBUG - add component: org.openqa.jetty.http.ResourceCache@cf2c80
+20:02:47.761 DEBUG - add component: org.openqa.selenium.server.SeleniumDriverResourceHandler in HttpContext[/selenium-server,/selenium-server]
+20:02:47.761 DEBUG - add component: HttpContext[/selenium-server/driver,/selenium-server/driver]
+20:02:47.761 DEBUG - Added HttpContext[/selenium-server/driver,/selenium-server/driver] for host *
+20:02:47.761 DEBUG - add component: org.openqa.jetty.http.ResourceCache@13c5982
+20:02:47.770 DEBUG - add component: WebDriver remote server
+20:02:47.773 DEBUG - add component: org.openqa.jetty.jetty.servlet.HashSessionManager@117a8bd
+20:02:47.774 DEBUG - add component: org.openqa.jetty.jetty.servlet.ServletHandler@471e30
+20:02:47.774 INFO - RemoteWebDriver instances should connect to: http://127.0.0.1:4444/wd/hub
+20:02:47.774 DEBUG - add component: HttpContext[/wd,/wd]
+20:02:47.775 DEBUG - Added HttpContext[/wd,/wd] for host *
+20:02:47.775 DEBUG - Starting org.openqa.jetty.jetty.Server@133f1d7
+20:02:47.776 INFO - Version Jetty/5.1.x
+20:02:47.776 DEBUG - LISTENERS: [SocketListener0@0.0.0.0:4444]
+20:02:47.776 DEBUG - HANDLER: {null={/selenium-server/driver/*=[HttpContext[/selenium-server/driver,/selenium-server/driver]], /selenium-server/*=[HttpContext[/selenium-server,/selenium-server]], /=[HttpContext[/,/]], /wd/*=[HttpContext[/wd,/wd]]}}
+20:02:47.777 DEBUG - Starting HttpContext[/selenium-server/driver,/selenium-server/driver]
+20:02:47.777 DEBUG - Init classloader from null, sun.misc.Launcher$AppClassLoader@3e25a5 for HttpContext[/selenium-server/driver,/selenium-server/driver]
+20:02:47.780 INFO - Started HttpContext[/selenium-server/driver,/selenium-server/driver]
+20:02:47.780 DEBUG - Starting HttpContext[/selenium-server,/selenium-server]
+20:02:47.780 DEBUG - Init classloader from null, sun.misc.Launcher$AppClassLoader@3e25a5 for HttpContext[/selenium-server,/selenium-server]
+20:02:47.781 DEBUG - Started org.openqa.jetty.http.handler.SecurityHandler in HttpContext[/selenium-server,/selenium-server]
+20:02:47.781 DEBUG - Started org.openqa.selenium.server.StaticContentHandler in HttpContext[/selenium-server,/selenium-server]
+20:02:47.781 DEBUG - Started org.openqa.selenium.server.SessionExtensionJsHandler in HttpContext[/selenium-server,/selenium-server]
+20:02:47.781 DEBUG - Started org.openqa.selenium.server.htmlrunner.SingleTestSuiteResourceHandler in HttpContext[/selenium-server,/selenium-server]
+20:02:47.781 DEBUG - Started org.openqa.selenium.server.SeleniumDriverResourceHandler in HttpContext[/selenium-server,/selenium-server]
+20:02:47.781 INFO - Started HttpContext[/selenium-server,/selenium-server]
+20:02:47.781 DEBUG - Starting HttpContext[/,/]
+20:02:47.781 DEBUG - Init classloader from null, sun.misc.Launcher$AppClassLoader@3e25a5 for HttpContext[/,/]
+20:02:47.781 DEBUG - Started org.openqa.selenium.server.ProxyHandler in HttpContext[/,/]
+20:02:47.781 INFO - Started HttpContext[/,/]
+20:02:47.782 DEBUG - Starting HttpContext[/wd,/wd]
+20:02:47.782 DEBUG - Init classloader from null, sun.misc.Launcher$AppClassLoader@3e25a5 for HttpContext[/wd,/wd]
+20:02:47.782 DEBUG - Starting org.openqa.jetty.jetty.servlet.ServletHandler@471e30
+20:02:47.782 DEBUG - New random session seed
+20:03:06.812 DEBUG - Started holder of class org.openqa.selenium.remote.server.DriverServlet
+20:03:06.813 INFO - Started org.openqa.jetty.jetty.servlet.ServletHandler@471e30
+20:03:06.813 INFO - Started HttpContext[/wd,/wd]
+20:03:06.816 DEBUG - Session scavenger period = 30s
+20:03:06.816 INFO - Started SocketListener on 0.0.0.0:4444
+20:03:06.816 INFO - Started org.openqa.jetty.jetty.Server@133f1d7
+20:03:06.825 DEBUG - Requested browser string '*firefox' matches *firefox 
+20:03:06.827 DEBUG - Discovering Firefox 2...
+20:03:06.831 DEBUG - Discovering Firefox 2...
+20:03:06.831 DEBUG - Checking whether Firefox 2 launcher at :'/Applications/Minefield.app/Contents/MacOS/firefox-bin' is valid...
+20:03:06.831 DEBUG - Checking whether Firefox 2 launcher at :'/Applications/Firefox-2.app/Contents/MacOS/firefox-bin' is valid...
+20:03:06.831 DEBUG - Checking whether Firefox 2 launcher at :'/Applications/Firefox.app/Contents/MacOS/firefox-bin' is valid...
+20:03:06.831 DEBUG - Checking whether Firefox 2 launcher at :'/usr/lib/firefox/firefox-bin' is valid...
+20:03:06.840 DEBUG - Did not find Firefox 2, now discovering Firefox 3...
+20:03:06.841 DEBUG - Discovering Firefox 3...
+20:03:06.845 DEBUG - Checking whether Firefox 3 launcher at :'/usr/lib/firefox-addons/firefox-bin' is valid...
+20:03:06.845 DEBUG - Checking whether Firefox 3 launcher at :'/usr/lib/firefox-addons/firefox' is valid...
+20:03:06.846 DEBUG - Checking whether Firefox 3 launcher at :'/usr/bin/firefox' is valid...
+20:03:06.847 WARN - Caution: '/usr/bin/firefox': file is a script file, not a real executable.  The browser environment is no longer fully under RC control
+20:03:06.847 DEBUG - Discovered valid Firefox 3 launcher  : '/usr/bin/firefox'
+jar:file:/var/lib/jenkins/selenium-server-standalone-2.39.0.jar!/customProfileDirCUSTFFCHROME
+20:03:06.851 DEBUG - Extracting /customProfileDirCUSTFFCHROME to /tmp/customProfileDir186819
+20:03:06.892 INFO - Preparing Firefox profile...
+HTML suite exception seen:
+java.lang.RuntimeException: Timed out waiting for profile to be created!
+	at org.openqa.selenium.server.browserlaunchers.FirefoxChromeLauncher.waitForFullProfileToBeCreated(FirefoxChromeLauncher.java:307)
+	at org.openqa.selenium.server.browserlaunchers.FirefoxChromeLauncher.populateCustomProfileDirectory(FirefoxChromeLauncher.java:119)
+	at org.openqa.selenium.server.browserlaunchers.FirefoxChromeLauncher.launch(FirefoxChromeLauncher.java:89)
+	at org.openqa.selenium.server.browserlaunchers.FirefoxChromeLauncher.launchHTMLSuite(FirefoxChromeLauncher.java:339)
+	at org.openqa.selenium.server.browserlaunchers.FirefoxLauncher.launchHTMLSuite(FirefoxLauncher.java:110)
+	at org.openqa.selenium.server.htmlrunner.HTMLLauncher.runHTMLSuite(HTMLLauncher.java:146)
+	at org.openqa.selenium.server.htmlrunner.HTMLLauncher.runHTMLSuite(HTMLLauncher.java:198)
+	at org.openqa.selenium.server.SeleniumServer.runHtmlSuite(SeleniumServer.java:640)
+	at org.openqa.selenium.server.SeleniumServer.boot(SeleniumServer.java:305)
+	at org.openqa.selenium.server.SeleniumServer.main(SeleniumServer.java:245)
+	at org.openqa.grid.selenium.GridLauncher.main(GridLauncher.java:96)
+20:03:26.956 INFO - Shutting down...
+20:03:26.956 DEBUG - Stopping org.openqa.jetty.jetty.Server@133f1d7
+20:03:26.956 DEBUG - closing ServerSocket[addr=0.0.0.0/0.0.0.0,port=0,localport=4444]
+20:03:26.957 INFO - Stopping Acceptor ServerSocket[addr=0.0.0.0/0.0.0.0,port=0,localport=4444]
+Build step 'Execute shell' marked build as failure
+Finished: FAILURE

@@ -1,0 +1,69 @@
+Started by user [8mha:AAAAlh+LCAAAAAAAAP9b85aBtbiIQTGjNKU4P08vOT+vOD8nVc83PyU1x6OyILUoJzMv2y+/JJUBAhiZGBgqihhk0NSjKDWzXb3RdlLBUSYGJk8GtpzUvPSSDB8G5tKinBIGIZ+sxLJE/ZzEvHT94JKizLx0a6BxUmjGOUNodHsLgAzOEgYu/dLi1CL9vNKcHACFIKlWvwAAAA==[0manonymous
+[EnvInject] - Loading node environment variables.
+Building in workspace /root/.jenkins/jobs/Koala_1/workspace
+[workspace] $ /bin/sh -xe /tmp/hudson6759743789692777036.sh
++ java -jar /root/selenium-server-standalone-2.39.0.jar -userExtensions /root/user-extensions.js -htmlSuite *firefox http://10.111.101.112:8888 /root/se34euca/selenium_ide/KOALA/SECURITY_GROUP_OPERATIONS.html Koala_results1.html -trustAllSSLCertificates
+Jan 17, 2014 3:07:04 PM org.openqa.grid.selenium.GridLauncher main
+INFO: Launching a standalone server
+15:07:05.340 INFO - Java: Sun Microsystems Inc. 20.0-b12
+15:07:05.341 INFO - OS: Linux 3.2.0-37-generic-pae i386
+15:07:05.366 INFO - v2.39.0, with Core v2.39.0. Built from revision ff23eac
+15:07:05.422 INFO - Default driver org.openqa.selenium.ie.InternetExplorerDriver registration is skipped: registration capabilities Capabilities [{platform=WINDOWS, ensureCleanSession=true, browserName=internet explorer, version=}] does not match with current platform: LINUX
+15:07:05.450 INFO - Default driver org.openqa.selenium.iphone.IPhoneDriver registration is skipped: registration capabilities Capabilities [{platform=MAC, browserName=iPad, version=}] does not match with current platform: LINUX
+15:07:05.451 INFO - Default driver org.openqa.selenium.iphone.IPhoneDriver registration is skipped: registration capabilities Capabilities [{platform=MAC, browserName=iPhone, version=}] does not match with current platform: LINUX
+15:07:05.482 INFO - RemoteWebDriver instances should connect to: http://127.0.0.1:4444/wd/hub
+15:07:05.483 INFO - Version Jetty/5.1.x
+15:07:05.483 INFO - Started HttpContext[/selenium-server/driver,/selenium-server/driver]
+15:07:05.484 INFO - Started HttpContext[/selenium-server,/selenium-server]
+15:07:05.484 INFO - Started HttpContext[/,/]
+15:07:05.821 INFO - Started org.openqa.jetty.jetty.servlet.ServletHandler@e28b9
+15:07:05.821 INFO - Started HttpContext[/wd,/wd]
+15:07:05.825 INFO - Started SocketListener on 0.0.0.0:4444
+15:07:05.825 INFO - Started org.openqa.jetty.jetty.Server@f7f540
+15:07:05.868 WARN - Caution: '/usr/bin/firefox': file is a script file, not a real executable.  The browser environment is no longer fully under RC control
+jar:file:/root/selenium-server-standalone-2.39.0.jar!/customProfileDirCUSTFFCHROME
+15:07:05.955 INFO - Preparing Firefox profile...
+15:07:07.411 INFO - Launching Firefox...
+15:07:08.567 INFO - Checking Resource aliases
+jar:file:/root/selenium-server-standalone-2.39.0.jar!/sslSupport
+15:07:11.400 INFO - Checking Resource aliases
+15:07:11.606 INFO - Started SocketListener on 0.0.0.0:49116
+15:07:38.892 INFO - Received posted results
+koala_logout.html
+<a href="koala_logout.html">koala_logout</a></td></tr>
+</tbody></table>
+
+
+
+verify-s.group-number-1.html
+<a href="verify-s.group-number-1.html">verify-s.group-number-1</a></td></tr>
+<tr class="  status_passed"><td>
+delete-s.group-from-item-page.html
+<a href="delete-s.group-from-item-page.html">delete-s.group-from-item-page</a></td></tr>
+<tr class="  status_passed"><td>
+verify-s.group-number-2.html
+<a href="verify-s.group-number-2.html">verify-s.group-number-2</a></td></tr>
+<tr class="  status_passed"><td>
+create-s-group-with-rules-from-dashboard.html
+<a href="create-s-group-with-rules-from-dashboard.html">create-s-group-with-rules-from-dashboard</a></td></tr>
+<tr class="  status_passed"><td>
+verify-s.group-number-1.html
+<a href="verify-s.group-number-1.html">verify-s.group-number-1</a></td></tr>
+<tr class="  status_passed"><td>
+delete-s-group-from-landing-page.html
+<a href="delete-s-group-from-landing-page.html">delete-s-group-from-landing-page</a></td></tr>
+<tr class="  status_passed"><td>
+verify-s.group-number-2.html
+<a href="verify-s.group-number-2.html">verify-s.group-number-2</a></td></tr>
+<tr class="  status_passed"><td>
+create-s-group-with-rules-and-tags.html
+<a href="create-s-group-with-rules-and-tags.html">create-s-group-with-rules-and-tags</a></td></tr>
+<tr class="  status_passed"><td>
+koala_login.html
+<a href="koala_login.html">koala_login</a></td></tr>
+<tr class="  status_passed"><td>
+15:07:39.424 INFO - Killing Firefox...
+15:07:39.484 INFO - Shutting down...
+15:07:39.484 INFO - Stopping Acceptor ServerSocket[addr=0.0.0.0/0.0.0.0,port=0,localport=4444]
+Archiving artifacts
+Finished: SUCCESS
