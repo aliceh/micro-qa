@@ -31,7 +31,7 @@ chown -R jenkins:jenkins /var/lib/jenkins
 ### Get IP address
 if curl http://169.254.169.254/latest/meta-data;then 
   ### This is an instance
-  ipaddress=`curl http://169.254.169.254/latest/meta-data/public-ipv4/`
+  ipaddress=`curl http://169.254.169.254/latest/meta-data/local-ipv4/`
   hostname=`curl http://169.254.169.254/latest/meta-data/public-hostname/`
 else
   ### This is a virtualbox vm
@@ -72,63 +72,6 @@ dbus-uuidgen > /var/lib/dbus/machine-id
 Xvfb :0 -ac 2> /dev/null &
 export DISPLAY=":0" 
 
-### Install chef dependencies
-curl -L https://www.opscode.com/chef/install.sh | bash
-yum -y install https://opscode-omnibus-packages.s3.amazonaws.com/el/6/x86_64/chef-server-11.0.10-1.el6.x86_64.rpm
-chef-server-ctl reconfigure
-mkdir ~/.chef
-cp /etc/chef-server/admin.pem ~/.chef
-cp /etc/chef-server/chef-validator.pem ~/.chef
-cat > ~/.chef/knife.rb <<EOF
-log_level                :info
-log_location             STDOUT
-node_name                'admin'
-client_key               '/var/lib/jenkins/.chef/admin.pem'
-validation_client_name   'chef-validator'
-validation_key           '/var/lib/jenkins/.chef/chef-validator.pem'
-chef_server_url          'https://localhost:443'
-syntax_check_cache_path  '/var/lib/jenkins/.chef/syntax_check_cache'
-cookbook_path [
-  "/root/cookbooks",
-]
-EOF
-
-echo 'erchef['s3_url_ttl'] = 3600' >> /etc/chef-server/chef-server.rb
-echo "bookshelf['vip'] = '$ipaddress'"  >> /etc/chef-server/chef-server.rb
-echo "bookshelf['url'] = 'https://$ipaddress'"  >> /etc/chef-server/chef-server.rb
-chef-server-ctl reconfigure
-
-sed -i s/localhost/$ipaddress/g ~/.chef/knife.rb
-
-cp -a /root/.chef/ /var/lib/jenkins/
-chown -R jenkins:jenkins /var/lib/jenkins/.chef/
-
-## Download cookbooks
-mkdir /root/cookbooks
-pushd /root/cookbooks
-git init
-echo "Chef Repo" >> README
-git add .
-git commit -a -m "Initial commit"
-knife cookbook site install ntp
-knife cookbook upload ntp
-knife cookbook site install partial_search
-knife cookbook upload partial_search
-knife cookbook site install ssh_known_hosts
-knife cookbook upload ssh_known_hosts
-knife cookbook site install selinux
-knife cookbook upload selinux
-knife cookbook site install yum
-knife cookbook upload yum
-knife cookbook site install iptables
-knife cookbook upload iptables
-
-git clone https://github.com/eucalyptus/eucalyptus-cookbook.git eucalyptus
-knife cookbook upload eucalyptus
-
-## Upload roles
-knife role from file eucalyptus/roles/*
-popd
 
 ### Create rc.local
 cat > /etc/rc.local <<EOF

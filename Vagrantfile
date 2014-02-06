@@ -16,8 +16,8 @@ Vagrant.configure("2") do |config|
     config.vm.hostname = "micro-qa"
     config.vm.provider :aws do |aws,override|
         config.ssh.pty = true
-        aws.access_key_id = "" 
-        aws.secret_access_key = ""
+        aws.access_key_id = "1YCMC3ZSCW8UF2GUE1B3U" 
+        aws.secret_access_key = "4fV20keM4AQiRMBejxxgYhYxQSFnd7vamQ8IsdCh"
         aws.instance_type = "m1.xlarge"
         aws.ami = "emi-80F94DD2"
         aws.security_groups = ["default"]
